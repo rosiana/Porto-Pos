@@ -56,4 +56,11 @@
         $('.navbar-custom').toggleClass('navbar-onclick');
     })
 
+    $(document).ready(function() {
+        $('.tooltip').tooltipster({
+            theme: 'tooltipster-borderless'
+        }
+        );
+    });
+
 })(jQuery); // End of use strict

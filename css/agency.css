@@ -306,9 +306,9 @@ header .intro-text .intro-heading {
 }
 .partnership li {
   display: inline-block;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 40px;
+  padding-left: 0;
+  padding-right: 40px;
 }
 .img-partnership {
   height: 36px;
