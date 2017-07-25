@@ -39,14 +39,17 @@
            $('.navcontainer').append($('.navbar-collapse'));
            $('.navbar-collapse').addClass('navbar-onclick');
         }
+        var h = window.innerHeight;
+        $('header').css({'height': h, 'width': 'auto'});
+        var padding = (h - $('.intro-text').height())/2 + 16;
+        console.log(h);
+        console.log(padding);
+        $('.intro-text').css({'padding-top': padding});
     })
 
 
     $('.navbar-toggle').click(function(){
         $('.navbar-custom').toggleClass('navbar-onclick');
     })
-
-    var h = window.innerHeight;
-    $('header').css({'height': h, 'width': 'auto'});
 
 })(jQuery); // End of use strict
