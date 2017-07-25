@@ -34,10 +34,14 @@
         if ($(window).width() > 480) {
            $('.navtop').append($('.navbar-collapse'));
            $('.navbar-collapse').removeClass('navbar-onclick');
+           $('.form-control-outer').addClass('col-md-8');
+           $('.form-control-outer').addClass('col-md-offset-2');
         }
         else {
            $('.navcontainer').append($('.navbar-collapse'));
            $('.navbar-collapse').addClass('navbar-onclick');
+           $('.form-control-outer').removeClass('col-md-8');
+           $('.form-control-outer').removeClass('col-md-offset-2');
         }
         var h = window.innerHeight;
         $('header').css({'height': h, 'width': 'auto'});

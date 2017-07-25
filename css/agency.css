@@ -238,12 +238,16 @@ fieldset[disabled] .btn-xl.active {
   position: relative;
 }
 
+.search {
+  position: relative;
+}
+
 .fa-search {
   position: absolute;
-  top: 10px;
-  right: 32px;
+  top: 14px;
+  right: 10px;
   color: #ccc;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 header {
@@ -778,11 +782,21 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 479px) {
   .container {
-    padding-right: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .navcontainer {
+    padding-right: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
     padding-left: 24px;
+    padding-right: 24px;
   }
   .navbar-brand img {
     width: 132px;
@@ -792,13 +806,13 @@ body {
     transform: translateY(-50%);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .container {
     padding-right: 48px;
     padding-left: 48px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .container {
     padding-right: 64px;
     padding-left: 64px;
