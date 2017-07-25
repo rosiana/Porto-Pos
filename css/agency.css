@@ -789,7 +789,14 @@ body {
   }
   .navcontainer {
     padding-right: 16px;
-    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .navbar-brand img {
+    width: 132px;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -797,6 +804,10 @@ body {
   .container {
     padding-left: 24px;
     padding-right: 24px;
+  }
+  .navcontainer {
+    padding-right: 36px;
+    padding-left: 36px;
   }
   .navbar-brand img {
     width: 132px;
@@ -810,6 +821,13 @@ body {
   .container {
     padding-right: 48px;
     padding-left: 48px;
+  }
+  .navbar-brand img {
+    width: 148px;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
