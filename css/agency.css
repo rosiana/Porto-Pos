@@ -159,11 +159,11 @@ fieldset[disabled] .btn-xl.active {
 .search-nav {
   display: none;
   padding-right: 0;
-  margin-bottom: 0;
   margin-top: 4px;
 }
 .search-nav-in {
   height: 40px;
+  transform: translateY(3px);
 }
 .navbar-custom {
   background-color: transparent;
@@ -239,7 +239,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom.affix {
     background-color: #ec651c;
-    padding: 8px 0;
+    padding: 8px 0 0;
 }
 .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
@@ -262,7 +262,10 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .fa-search-nav {
-  top: 8px;
+  top: 11px;
+}
+.fa-bars {
+  font-size: 18px;
 }
 
 header {
