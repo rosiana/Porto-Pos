@@ -358,7 +358,7 @@ section h3.section-subheading {
   }
 }
 .service-heading {
-  margin: 15px 0;
+  margin: 16px 0 8px;
   text-transform: none;
 }
 #portfolio .portfolio-item {
@@ -611,6 +611,12 @@ section h3.section-subheading {
 }
 aside.clients img {
   margin: 50px auto;
+}
+section#guides {
+  padding: 80px 0;
+}
+.guide-row {
+  transform: translateY(-24px);
 }
 section#contact {
   background-color: #222222;
