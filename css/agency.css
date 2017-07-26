@@ -267,6 +267,10 @@ fieldset[disabled] .btn-xl.active {
 .fa-bars {
   font-size: 18px;
 }
+.guide {
+  width: 96px;
+  height: auto;
+}
 
 header {
   background-image: url('../img/banner.jpg');
