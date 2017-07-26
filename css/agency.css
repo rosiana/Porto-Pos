@@ -810,7 +810,6 @@ body {
     height: auto;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
   }
 }
 
@@ -828,7 +827,6 @@ body {
     height: auto;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
   }
   .logo-small {
     width: 48px;
@@ -848,7 +846,6 @@ body {
     height: auto;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -856,10 +853,18 @@ body {
     padding-right: 64px;
     padding-left: 64px;
   }
+  .navbar-brand img {
+    position: relative;
+    top: 50%;
+  }
 }
 @media (min-width: 1200px) {
   .container {
     padding-right: 64px;
     padding-left: 64px;
+  }
+  .navbar-brand img {
+    position: relative;
+    top: 50%;
   }
 }
