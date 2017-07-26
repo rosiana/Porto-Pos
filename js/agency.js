@@ -31,7 +31,7 @@
     })
 
     $(window).on("load resize scroll",function(e){ 
-        if ($(window).width() > 599) {
+        if ($(window).width() > 759) {
            $('.navtop').append($('.navbar-collapse'));
            $('.navbar-collapse').removeClass('navbar-onclick');
            $('.navbar-collapse').css({'float':'right'});
@@ -50,12 +50,22 @@
             $('.logo').addClass('logo-small');
             $('.logo-small').css({'width':'48px'});
             $('.logo-small').css({'transform':'translateY(-60%)'});
+            if ($(window).width() > 760) {
+                $('.navbar-header').addClass('col-xs-1');
+                $('.navbar-header').removeClass('col-xs-2');
+            }
+            else {
+                $('.navbar-header').removeClass('col-xs-1');
+                $('.navbar-header').addClass('col-xs-2');
+            }
         }
         else {
             $(".logo").attr("src","img/logo_putih.png");
             $('.logo').addClass('logo-small');
             $('.navbar-brand img').css({'width':'132px'});
             $('.navbar-brand img').css({'transform':'translateY(-50%)'});
+            $('.navbar-header').removeClass('col-xs-1');
+            $('.navbar-header').addClass('col-xs-2');
         }
         var h = window.innerHeight;
         $('header').css({'height': h, 'width': 'auto'});
