@@ -361,6 +361,9 @@ section h3.section-subheading {
   margin: 16px 0 8px;
   text-transform: none;
 }
+.guide-desc {
+  margin-bottom: 24px;
+}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
