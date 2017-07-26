@@ -31,7 +31,7 @@
     })
 
     $(window).on("load resize scroll",function(e){ 
-        if ($(window).width() > 480) {
+        if ($(window).width() > 599) {
            $('.navtop').append($('.navbar-collapse'));
            $('.navbar-collapse').removeClass('navbar-onclick');
            $('.form-control-outer').addClass('col-md-8');
@@ -42,6 +42,18 @@
            $('.navbar-collapse').addClass('navbar-onclick');
            $('.form-control-outer').removeClass('col-md-8');
            $('.form-control-outer').removeClass('col-md-offset-2');
+        }
+        if ($(window).width() < 720) {
+            $(".logo").attr("src","img/logo_putih_2.png");
+            $('.logo').addClass('logo-small');
+            $('.logo-small').css({'width':'48px'});
+            $('.logo-small').css({'transform':'translateY(-60%)'});
+        }
+        else {
+            $(".logo").attr("src","img/logo_putih.png");
+            $('.logo').addClass('logo-small');
+            $('.navbar-brand img').css({'width':'132px'});
+            $('.navbar-brand img').css({'transform':'translateY(-50%)'});
         }
         var h = window.innerHeight;
         $('header').css({'height': h, 'width': 'auto'});
@@ -61,6 +73,23 @@
             theme: 'tooltipster-borderless'
         }
         );
+    });
+    var searchWidth = $('.search-header-count').width();
+    console.log("h "+ searchWidth);
+    //$('.search-nav-in').css({'width': searchWidth});
+
+
+    $(window).scroll(function() {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test = $('.partnership').offset().top;             
+
+        if(y_scroll_pos > scroll_pos_test) {
+           $('.search-nav').css({'display': 'inline-block'});
+        }
+        else
+        {
+            $('.search-nav').css({'display': 'none'});
+        }
     });
 
 })(jQuery); // End of use strict

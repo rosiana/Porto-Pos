@@ -35,15 +35,19 @@
         <div class="container navcontainer">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navtop row">
-                <div class="navbar-header page-scroll col-md-2 col-sm-3 col-xs-6">
+                <div class="navbar-header page-scroll col-xs-2">
                     <a class="navbar-brand page-scroll" href="#page-top">                    
-                        <img src="img/logo_putih.png" class="img-responsive" alt="">
+                        <img class="logo" src="img/logo_putih.png" class="img-responsive" alt="">
                     </a>
+                </div>
+                <div class="form-group search search-nav col-md-7 col-sm-6 col-xs-6">
+                    <input type="text" class="form-control search-header search-nav-in" placeholder="Cari barang atau masukkan URL produk" id="name">
+                    <i class="fa fa-search fa-search-nav" aria-hidden="true"></i>
                 </div>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse col-xs-2" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="hidden">
                             <a href="#page-top"></a>
@@ -71,27 +75,73 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Belanja dari marketplace terkemuka internasional dan domestik<br />
                 dan kirim dengan mudah melalui Pos.</div>
-                <div class="form-control-outer">
+                <div class="form-control-outer col-md-8 col-md-offset-2">
                     <div class="form-group search">
-                        <input type="text" class="form-control search-header" placeholder="Cari barang atau masukkan URL produk" id="name">
+                        <input type="text" class="form-control search-header search-header-count" placeholder="Cari barang atau masukkan URL produk" id="name">
                         <i class="fa fa-search" aria-hidden="true"></i>
-                        <ul class="partnership col-md-10 col-md-offset-1">
-                            <li><a href="#"><img class="img-partnership tooltip" src="img/amazon-2.png" title="Amazon"/></a></li>
-                            <li><a href="#"><img class="img-partnership tooltip" src="img/ebay.png" title="Ebay"/></a></li>
-                            <li><a href="#"><img class="img-partnership tooltip" src="img/bb.png" title="Best Buy"/></a></li>
-                            <li><a href="#"><img class="img-partnership tooltip" src="img/wm.png" title="Walmart"/></a></li>
-                            <li><a href="#"><img class="img-partnership tooltip" src="img/rak.png" title="Rakuten"/></a></li>
-                            <li><a href="#"><img class="img-partnership tooltip" src="img/alibaba.png" title="Alibaba"/></a></li>
-                            <li><a href="#"><img class="img-partnership tooltip" src="img/laz.png" title="Lazada"/></a></li>
-                            <li><a href="#"><img class="img-partnership tooltip" src="img/toped-2.png" title="Tokopedia"/></a></li>
-                            <li><a href="#"><img class="img-partnership tooltip" src="img/bl.png" title="Bukalapak"/></a></li>
-                            <li><a href="#"><img class="img-partnership tooltip" src="img/bhi.png" title="Bhinneka"/></a></li>
-                        </ul>
                     </div>
+                    <ul class="partnership col-md-10 col-md-offset-1">
+                        <li><a href="#"><img class="img-partnership tooltip" src="img/amazon-2.png" title="Amazon"/></a></li>
+                        <li><a href="#"><img class="img-partnership tooltip" src="img/ebay.png" title="Ebay"/></a></li>
+                        <li><a href="#"><img class="img-partnership tooltip" src="img/bb.png" title="Best Buy"/></a></li>
+                        <li><a href="#"><img class="img-partnership tooltip" src="img/wm.png" title="Walmart"/></a></li>
+                        <li><a href="#"><img class="img-partnership tooltip" src="img/rak.png" title="Rakuten"/></a></li>
+                        <li><a href="#"><img class="img-partnership tooltip" src="img/alibaba.png" title="Alibaba"/></a></li>
+                        <li><a href="#"><img class="img-partnership tooltip" src="img/laz.png" title="Lazada"/></a></li>
+                        <li><a href="#"><img class="img-partnership tooltip" src="img/toped-2.png" title="Tokopedia"/></a></li>
+                        <li><a href="#"><img class="img-partnership tooltip" src="img/bl.png" title="Bukalapak"/></a></li>
+                        <li><a href="#"><img class="img-partnership tooltip" src="img/bhi.png" title="Bhinneka"/></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">How to order</h2>
+                    <h3 class="section-subheading text-muted">Belanja dan kirim barang dengan empat langkah mudah.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Responsive Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>
