@@ -48,7 +48,7 @@
         if ($(window).width() < 870) {
             $(".logo").attr("src","img/logo_putih_2.png");
             $('.logo').addClass('logo-small');
-            $('.logo-small').css({'width':'48px'});
+            $('.logo-small').css({'width':'54px'});
             $('.logo-small').css({'transform':'translateY(-60%)'});
             if ($(window).width() > 760) {
                 $('.navbar-header').addClass('col-xs-1');
@@ -68,12 +68,13 @@
             $('.navbar-header').addClass('col-xs-2');
         }
         if ($('.navbar-custom').hasClass('affix-top')) {
-            $('.navbar-custom').css({'background-color':'transparent'});
+            $('.navcontainer').css({'background-color':'transparent'});
         }
         else {
-            $('.navbar-custom').css({'background-color':'#ec651c'});
+            $('.navcontainer').css({'background-color':'#ec651c'});
         }
         if ($(window).width() < 480) {
+            $(".search-nav-in").attr("placeholder","Cari barang atau masukkan URL");
             $('.product-price').css({'display':'none'});
             $('.product-price-2').css({'display':'block'});
         }

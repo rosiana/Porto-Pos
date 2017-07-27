@@ -862,18 +862,19 @@ body {
 }
 @media (max-width: 479px) {
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
   .navcontainer {
-    padding-right: 16px;
-    padding-left: 16px;    
+    padding-right: 8px;
+    padding-left: 8px;    
   }
   .navbar-brand img {
     width: 132px;
     height: auto;
     position: relative;
     top: 50%;
+    padding-left: 16px;
   }
   h3 {
     font-size: 14px !important;
@@ -881,9 +882,23 @@ body {
   .navbar-custom.affix {
     background-color: #ec651c;
     padding: 0;
-    height: 54px;
+  }
+  .navbar-toggle {
+    padding-right: 24px;
+    margin-bottom: 0;
   }
   .search-nav-in {
+    height: 32px;
+  }
+  .search-nav {
+    margin-bottom: 8px;  
+    transform: translateY(3px);  
+  }
+  .navtop {
+    height: 48px !important;
+  }
+  .fa-search {
+    font-size: 18px;
   }
 }
 
