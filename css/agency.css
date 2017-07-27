@@ -747,11 +747,27 @@ ul.social-buttons li a:active {
 .product-store {
   font-family: 'Open Sans', sans-serif;
   text-align: left;
+  bottom: 0;
+  position: absolute;
 }
 .product-price {
+  font-family: 'Open Sans', sans-serif;
   text-align: right;
   color: #017f2d;
   font-weight: 600;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.product-price-2 {
+  display: none;
+  font-family: 'Open Sans', sans-serif;
+  text-align: right;
+  color: #017f2d;
+  font-weight: 600;
+  bottom: 0;
+  right: 0;
+  position: absolute;
 }
 .products-modal .modal-dialog {
   margin: 0;

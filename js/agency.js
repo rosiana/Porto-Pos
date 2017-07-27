@@ -73,6 +73,14 @@
         else {
             $('.navbar-custom').css({'background-color':'#ec651c'});
         }
+        if ($(window).width() < 480) {
+            $('.product-price').css({'display':'none'});
+            $('.product-price-2').css({'display':'block'});
+        }
+        else {
+            $('.product-price').css({'display':'block'});
+            $('.product-price-2').css({'display':'none'});
+        }
         var h = window.innerHeight;
         $('header').css({'height': h, 'width': 'auto'});
         var padding = (h - $('.intro-text').height())/2 + 16;
