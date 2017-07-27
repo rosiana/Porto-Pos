@@ -67,6 +67,12 @@
             $('.navbar-header').removeClass('col-xs-1');
             $('.navbar-header').addClass('col-xs-2');
         }
+        if ($('.navbar-custom').hasClass('affix-top')) {
+            $('.navbar-custom').css({'background-color':'transparent'});
+        }
+        else {
+            $('.navbar-custom').css({'background-color':'#ec651c'});
+        }
         var h = window.innerHeight;
         $('header').css({'height': h, 'width': 'auto'});
         var padding = (h - $('.intro-text').height())/2 + 16;
