@@ -75,12 +75,12 @@
         }
         if ($(window).width() < 480) {
             $(".search-nav-in").attr("placeholder","Cari barang atau masukkan URL");
-            $('.product-price').css({'display':'none'});
-            $('.product-price-2').css({'display':'block'});
+            //$('.product-price').css({'display':'none'});
+            //$('.product-price-2').css({'display':'block'});
         }
         else {
-            $('.product-price').css({'display':'block'});
-            $('.product-price-2').css({'display':'none'});
+            //$('.product-price').css({'display':'block'});
+            //$('.product-price-2').css({'display':'none'});
         }
         var h = window.innerHeight;
         $('header').css({'height': h, 'width': 'auto'});
