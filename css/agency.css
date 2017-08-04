@@ -1176,6 +1176,8 @@ body {
 
 .remainder {
   transform: translateY(-10px);
+  height: 256px;
+  margin-bottom: -16px;
   background-color: #fff;
   margin-right: 15px;
   margin-left: -1px;

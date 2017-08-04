@@ -137,18 +137,18 @@
 
     var sidebarShown = false;
     $('.fa-bars').click(function() {
-        if (!sidebarShown) {
-            $('.sidebar').css({'display': 'block'});
-            $('.sidebar-overlay').css({'display': 'block'});
-            $('.scrollable').css({'overflow': 'hidden'});
-            sidebarShown = true;
-        }
-        else {
-            $('.sidebar').css({'display': 'none'});
-            $('.sidebar-overlay').css({'display': 'none'});
-            $('.scrollable').css({'overflow': 'visible'});
-            sidebarShown = false;
-        }
+        $('.sidebar').css({'display': 'block'});
+        $('.sidebar-overlay').css({'display': 'block'});
+        $('body').css({'overflow': 'hidden'});
+        $('.sidebar').css({'overflow-y': 'scroll'});
+        sidebarShown = true;
+    });
+    $('.sidebar-overlay').click(function() {
+        $('.sidebar').scrollTop(0);
+        $('.sidebar').css({'display': 'none'});
+        $('.sidebar-overlay').css({'display': 'none'});
+        $('body').css({'overflow': 'scroll'});
+        sidebarShown = false;
     });
 
 
