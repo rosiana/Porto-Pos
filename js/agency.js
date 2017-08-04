@@ -123,6 +123,7 @@
            $('.search-nav-small').css({'display': 'block'});
            if ($(window).width() < 768)  {
                 $('.navbar-custom').css({'height':'96px'});
+                $('.search-nav-1').css({'display': 'block'});
            }
         }
         else
@@ -131,6 +132,7 @@
             $('.search-nav-small').css({'display': 'none'});
             if ($(window).width() < 768)  {
                 $('.navbar-custom').css({'height':'54px'});
+                $('.search-nav-1').css({'display': 'none'});
            }
         }
     });
