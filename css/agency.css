@@ -900,6 +900,14 @@ body {
     padding-left: 24px;
     padding-right: 24px;
   }
+  .row-products {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .no-gutter > [class*='col-'] {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
   .navcontainer {
     padding-right: 36px;
     padding-left: 36px;
