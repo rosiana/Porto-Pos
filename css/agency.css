@@ -42,9 +42,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+}
+h2 {
+  text-transform: capitalize;
 }
 input {
   outline: none;
@@ -55,6 +57,7 @@ input {
 }
 .search-header {
   height: 50px;
+  border-radius: 0;
 }
 .img-centered {
   margin: 0 auto;
@@ -69,7 +72,6 @@ input {
   color: white;
   background-color: #fed136;
   border-color: #fed136;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -113,7 +115,6 @@ fieldset[disabled] .btn-primary.active {
   color: white;
   background-color: #fed136;
   border-color: #fed136;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 3px;
@@ -191,13 +192,11 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-toggle {
   border-color: transparent;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 12px;
 }
 .navbar-custom .nav li a {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
@@ -236,6 +235,43 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
+  .product-name {
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 16px !important;
+    font-size: 16px;
+    overflow: hidden;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     line-height: 20px;     /* fallback */
+     max-height: 40px;      /* fallback */
+     -webkit-line-clamp: 2; /* number of lines to show */
+     -webkit-box-orient: vertical;
+  }
+  .products-caption {
+    padding: 16px;
+    height: 124px !important;
+    border: solid 1px #ddd;
+  }
+  .product-img {
+    border: solid 1px #ddd;
+    border-bottom: none;
+  }
+  .product-store {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    position: absolute;
+    bottom: 36px;
+    color: #777;
+  }
+  .product-price {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    color: #017f2d;
+    font-weight: 600;
+    bottom: 16px;
+    position: absolute;
+  }
 }
 .navbar-custom.affix {
     background-color: #ec651c;
@@ -256,13 +292,14 @@ fieldset[disabled] .btn-xl.active {
 .fa-search-custom {
   position: absolute;
   top: 14px;
-  right: 10px;
+  right: 16px;
   color: #ccc;
   font-size: 22px;
 }
 
 .fa-search-nav {
   top: 2px;
+  right: 12px;
   font-size: 20px;
 }
 .fa-bars {
@@ -290,13 +327,12 @@ header .intro-text {
   padding-bottom: 50px;
 }
 header .intro-text .intro-lead-in {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
   margin-bottom: 25px;
 }
 header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   text-transform: uppercase;
   font-weight: 700;
   font-size: 50px;
@@ -305,7 +341,7 @@ header .intro-text .intro-heading {
 }
 @media (max-width: 767px) {  
   h4 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .product-name {
     font-weight: 400;
@@ -320,6 +356,43 @@ header .intro-text .intro-heading {
      -webkit-line-clamp: 2; /* number of lines to show */
      -webkit-box-orient: vertical;
   }
+  .product-name {
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 16px !important;
+    font-size: 16px;
+    overflow: hidden;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     line-height: 20px;     /* fallback */
+     max-height: 40px;      /* fallback */
+     -webkit-line-clamp: 2; /* number of lines to show */
+     -webkit-box-orient: vertical;
+  }
+  .products-caption {
+    padding: 16px;
+    height: 124px !important;
+    border: solid 1px #ddd;
+  }
+  .product-img {
+    border: solid 1px #ddd;
+    border-bottom: none;
+  }
+  .product-store {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    position: absolute;
+    bottom: 36px;
+    color: #777;
+  }
+  .product-price {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    color: #017f2d;
+    font-weight: 600;
+    bottom: 16px;
+    position: absolute;
+  }
 }
 @media (min-width: 768px) {
   header .intro-text {
@@ -327,13 +400,12 @@ header .intro-text .intro-heading {
     /*padding-bottom: 200px;*/
   }
   header .intro-text .intro-lead-in {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 64px;
   }
   header .intro-text .intro-heading {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     text-transform: uppercase;
     font-weight: 700;
     font-size: 75px;
@@ -682,27 +754,23 @@ section#contact .form-control:focus {
   box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
 section#contact :-moz-placeholder {
   /* Firefox 18- */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
 section#contact ::-moz-placeholder {
   /* Firefox 19+ */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
 section#contact :-ms-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
@@ -716,14 +784,12 @@ footer {
 }
 footer span.copyright {
   line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
 }
 footer ul.quicklinks {
   margin-bottom: 0;
   line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
 }
@@ -754,36 +820,6 @@ ul.social-buttons li a:active {
 .btn.active,
 .btn:active:focus {
   outline: none;
-}
-.product-name {
-  font-weight: 400;
-  text-align: left;
-  margin-bottom: 16px !important;
-  font-size: 18px;
-  overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   line-height: 18px;     /* fallback */
-   max-height: 36px;      /* fallback */
-   -webkit-line-clamp: 2; /* number of lines to show */
-   -webkit-box-orient: vertical;
-}
-.products-caption {
-  padding: 8px;
-}
-.product-store {
-  font-family: 'Open Sans', sans-serif;
-  text-align: left;
-  bottom: 0;
-  color: #777;
-}
-.product-price {
-  font-family: 'Open Sans', sans-serif;
-  text-align: left;
-  color: #017f2d;
-  font-weight: 600;
-  bottom: 0;
-  right: 0;
 }
 .products-modal .modal-dialog {
   margin: 0;
@@ -894,12 +930,13 @@ body {
   opacity: .5;
   top: 0;
   left: 0;
+  z-index: 99998;
 }
 
 .sidebar {
   display: none;
   background-color: #ec651c;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 272px;
   float: left;
@@ -1028,6 +1065,29 @@ body {
   color: #fff;
 }
 
+.footer {
+}
+
+.footer-menu {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+.footer-menu li {
+  line-height: 40px;
+}
+
+.about-section-footer {
+  font-weight: 600;
+  transform: translateY(-24px);
+  font-size: 16px;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
 @media (max-width: 479px) {
   .container {
     padding-left: 16px;
@@ -1075,6 +1135,23 @@ body {
     margin-left: 4px;
     width: calc(100% - 8px);
   }
+  .footer {
+    display: none;
+  }
+  .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    background-color: #03b140;
+    width: 112px;
+    height: 50px;
+  }
+  .search-btn p {
+    transform: translateY(12px);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -1118,6 +1195,28 @@ body {
   .no-gutter-nav {
     padding-left: 10px;
     padding-right: 10px;
+  }  
+  .overlay-category {
+    margin-right: 16px;
+    margin-left: 8px;
+    width: calc(100% - 16px);
+  }
+  .footer {
+    display: none;
+  }
+  .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    background-color: #03b140;
+    width: 112px;
+    height: 50px;
+  }
+  .search-btn p {
+    transform: translateY(12px);
+    text-transform: uppercase;
+    font-weight: 600;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1155,6 +1254,28 @@ body {
   }
   .intro-text {
     width: 692px;
+  }  
+  .overlay-category {
+    margin-right: 16px;
+    margin-left: 8px;
+    width: calc(100% - 16px);
+  }
+  .footer {
+    display: block;
+  }
+  .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    background-color: #03b140;
+    width: 112px;
+    height: 50px;
+  }
+  .search-btn p {
+    transform: translateY(12px);
+    text-transform: uppercase;
+    font-weight: 600;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1190,6 +1311,31 @@ body {
   .nav-menu {
     transform: translateY(-8px);
   }
+  .overlay-category {
+    margin-right: 8px;
+    margin-left: 8px;
+    width: calc(100% - 16px);
+  }
+  .footer {
+    display: block;
+  }
+  .container-guide {
+    height: 272px;
+  }
+  .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    background-color: #03b140;
+    width: 112px;
+    height: 50px;
+  }
+  .search-btn p {
+    transform: translateY(12px);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -1223,5 +1369,30 @@ body {
   }
   .nav-menu {
     transform: translateY(-8px);
+  }
+  .overlay-category {
+    margin-right: 16px;
+    margin-left: 16px;
+    width: calc(100% - 32px);
+  }
+  .footer {
+    display: block;
+  }
+  .container-guide {
+    height: 272px;
+  }
+  .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    background-color: #03b140;
+    width: 128px;
+    height: 50px;
+  }
+  .search-btn p {
+    transform: translateY(12px);
+    text-transform: uppercase;
+    font-weight: 600;
   }
 }
