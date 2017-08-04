@@ -157,7 +157,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .search-nav {
-  display: none;
+  visibility: hidden;
   padding-right: 0;
   margin-top: 4px;
 }
@@ -262,7 +262,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .fa-search-nav {
-  top: 11px;
+  top: 2px;
+  font-size: 20px;
 }
 .fa-bars {
   font-size: 18px;
@@ -860,6 +861,10 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+.fa-bars {
+  color: #fff;
+  transform: translateY(8px);
+}
 @media (max-width: 479px) {
   .container {
     padding-left: 16px;
@@ -873,25 +878,34 @@ body {
     padding-right: 4px;
     padding-left: 4px;
   }
-  .navcontainer {
-    padding-right: 16px;
-    padding-left: 16px;    
+  .navtop-1 {
+    display: none;
   }
-  .navbar-brand img {
-    width: 132px;
+  .navtop-2 {
+    display: block;
+  }
+  .navcontainer {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+  .navbar-brand-1 {
+    margin: 0 auto;
+  }
+  .navbar-brand-1 img {
+    width: 152px;
     height: auto;
     position: relative;
-    top: 50%;
+    top: 50%; 
+    margin-top: 8px;
+    margin-bottom: 16px;
   }
-  h3 {
-    font-size: 14px !important;
+  .search-nav-1 {
+    padding-left: 0 !important;
+    margin-bottom: 4px;
   }
-  .navbar-custom.affix {
-    background-color: #ec651c;
-    padding: 0;
-    height: 54px;
-  }
-  .search-nav-in {
+  .no-gutter-nav {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -908,37 +922,71 @@ body {
     padding-right: 8px;
     padding-left: 8px;
   }
+  .navtop-1 {
+    display: none;
+  }
+  .navtop-2 {
+    display: block;
+  }
   .navcontainer {
     padding-right: 36px;
     padding-left: 36px;
   }
-  .navbar-brand img {
-    width: 132px;
+  .navbar-brand-1 {
+    margin: 0 auto;
+  }
+  .navbar-brand-1 img {
+    width: 152px;
     height: auto;
     position: relative;
-    top: 50%;
+    top: 50%; 
+    margin-top: 8px;
+    margin-bottom: 16px;
   }
-  .logo-small {
-    width: 48px;
-    transform: translateY(8px);
-  }
-  .search-nav {
+  .search-nav-1 {
     padding-left: 0 !important;
+    margin-bottom: 4px;
+  }
+  .no-gutter-nav {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
-    width: 740px;
+    width: 692px;
   }
   .no-gutter > [class*='col-'] {
     padding-right: 8px;
     padding-left: 8px;
   }
+  .navbar-custom,
+  .navcontainer,
+  .navtop {
+    height: 40px;
+    background-color: transparent;
+  }
+  .navtop-1 {
+    display: block;
+  }
+  .navtop-2 {
+    display: none;
+  }
+  .navtop {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
   .navbar-brand img {
-    width: 148px;
-    height: auto;
+    height: 26px;
+    width: auto;
     position: relative;
-    top: 50%;
+    transform: translateY(-4px);
+  }
+  .nav-menu {
+    transform: translateY(-8px);
+  }
+  .intro-text {
+    width: 692px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -949,9 +997,30 @@ body {
     padding-right: 8px;
     padding-left: 8px;
   }
+  .navtop-1 {
+    display: block;
+  }
+  .navtop-2 {
+    display: none;
+  }
+  .navbar-custom,
+  .navcontainer,
+  .navtop {
+    height: 40px;
+    background-color: transparent;
+  }
+  .navtop {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
   .navbar-brand img {
+    height: 26px;
+    width: auto;
     position: relative;
-    top: 50%;
+    transform: translateY(-4px);
+  }
+  .nav-menu {
+    transform: translateY(-8px);
   }
 }
 @media (min-width: 1200px) {
@@ -962,19 +1031,30 @@ body {
     padding-right: 16px;
     padding-left: 16px;
   }
+  .navtop-1 {
+    display: block;
+  }
+  .navtop-2 {
+    display: none;
+  }
   .navbar-custom,
   .navcontainer,
   .navtop {
     height: 40px;
+    background-color: transparent;
   }
   .navtop {
     padding-right: 16px;
     padding-left: 16px;
   }
   .navbar-brand img {
-    height: 24px;
+    height: 26px;
     width: auto;
     position: relative;
+    transform: translateY(-4px);
+  }
+  .nav-menu {
+    transform: translateY(-8px);
   }
 }
 .no-gutter-nav > [class*='col-'] {

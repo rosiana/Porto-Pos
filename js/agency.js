@@ -46,8 +46,8 @@
            //$('.form-control-outer').removeClass('col-md-offset-2');
         }
         if ($(window).width() < 870) {
-            $(".logo").attr("src","img/logo_putih_2.png");
-            $('.logo').addClass('logo-small');
+            //$(".logo").attr("src","img/logo_putih_2.png");
+            //$('.logo').addClass('logo-small');
             $('.logo-small').css({'width':'54px'});
             $('.logo-small').css({'transform':'translateY(-60%)'});
             if ($(window).width() > 760) {
@@ -60,18 +60,18 @@
             }
         }
         else {
-            $(".logo").attr("src","img/logo_putih.png");
-            $('.logo').addClass('logo-small');
+            //$(".logo").attr("src","img/logo_putih.png");
+            //$('.logo').addClass('logo-small');
             //$('.navbar-brand img').css({'width':'132px'});
             //$('.navbar-brand img').css({'transform':'translateY(-50%)'});
             //$('.navbar-header').removeClass('col-xs-1');
             //$('.navbar-header').addClass('col-xs-2');
         }
-        if ($('.navbar-custom').hasClass('affix-top')) {
-            $('.navcontainer').css({'background-color':'transparent'});
+        if (($(window).width() < 768) && ($('.navbar-custom').hasClass('affix-top'))) {
+            $('.navbar-custom').css({'padding-top':'8px'});
         }
         else {
-            $('.navcontainer').css({'background-color':'#ec651c'});
+            //$('.navcontainer').css({'background-color':'#ec651c'});
         }
         if ($(window).width() < 480) {
             $(".search-nav-in").attr("placeholder","Cari barang atau masukkan URL");
@@ -88,6 +88,14 @@
         console.log(h);
         console.log(padding);
         $('.intro-text').css({'padding-top': padding});
+
+        if ($('.logo-container').width() < $('.logo-center').width()) {
+            var widthX = $('.logo-container').width();
+            $('.logo-center').css({'width': widthX});
+        }
+        else {
+            $('.logo-center').css({'width': '152px'});
+        }
     })
 
 
@@ -111,12 +119,21 @@
         var scroll_pos_test = $('.partnership').offset().top;             
 
         if(y_scroll_pos > scroll_pos_test) {
-           $('.search-nav').css({'display': 'inline-block'});
+           $('.search-nav').css({'visibility': 'visible'});
+           $('.search-nav-small').css({'display': 'block'});
+           if ($(window).width() < 768)  {
+                $('.navbar-custom').css({'height':'96px'});
+           }
         }
         else
         {
-            $('.search-nav').css({'display': 'none'});
+            $('.search-nav').css({'visibility': 'hidden'});
+            $('.search-nav-small').css({'display': 'none'});
+            if ($(window).width() < 768)  {
+                $('.navbar-custom').css({'height':'54px'});
+           }
         }
     });
+
 
 })(jQuery); // End of use strict
