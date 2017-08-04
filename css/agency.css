@@ -920,7 +920,7 @@ body {
 }
 .fa-bars {
   color: #fff;
-  transform: translateY(8px);
+  transform: translateY(12px);
 }
 .no-gutter-nav > [class*='col-'] {
     padding-right:0;
@@ -1137,6 +1137,12 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
+  section#guides {
+    padding-top: 40px;
+  }
+  .container-guide {
+    height: 880px;
+  }
   .form-control-outer {
     padding-right: 0;
     padding-left: 0;
@@ -1158,7 +1164,7 @@ body {
     right: 0;
     height: 0;
     background-color: #03b140;
-    width: 112px;
+    width: 80px;
     height: 44px;
   }
   .search-btn p {
@@ -1209,6 +1215,9 @@ body {
   .no-gutter-nav {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .container-guide {
+    height: 800px;
   }
   .overlay-category {
     margin-right: 16px;
@@ -1269,6 +1278,9 @@ body {
   .intro-text {
     width: 692px;
   }  
+  .container-guide {
+    height: 480px;
+  }
   .overlay-category {
     margin-right: 16px;
     margin-left: 8px;
@@ -1334,7 +1346,7 @@ body {
     display: block;
   }
   .container-guide {
-    height: 272px;
+    height: 296px;
   }
   .search-btn {
     position: absolute;
