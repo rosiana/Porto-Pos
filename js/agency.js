@@ -35,15 +35,15 @@
            $('.navtop').append($('.navbar-collapse'));
            $('.navbar-collapse').removeClass('navbar-onclick');
            $('.navbar-collapse').css({'float':'right'});
-           $('.form-control-outer').addClass('col-md-8');
-           $('.form-control-outer').addClass('col-md-offset-2');
+           //$('.form-control-outer').addClass('col-md-8');
+           //$('.form-control-outer').addClass('col-md-offset-2');
         }
         else {
            $('.navcontainer').append($('.navbar-collapse'));
            $('.navbar-collapse').css({'float':'left'});
            $('.navbar-collapse').addClass('navbar-onclick');
-           $('.form-control-outer').removeClass('col-md-8');
-           $('.form-control-outer').removeClass('col-md-offset-2');
+           //$('.form-control-outer').removeClass('col-md-8');
+           //$('.form-control-outer').removeClass('col-md-offset-2');
         }
         if ($(window).width() < 870) {
             $(".logo").attr("src","img/logo_putih_2.png");
@@ -51,21 +51,21 @@
             $('.logo-small').css({'width':'54px'});
             $('.logo-small').css({'transform':'translateY(-60%)'});
             if ($(window).width() > 760) {
-                $('.navbar-header').addClass('col-xs-1');
-                $('.navbar-header').removeClass('col-xs-2');
+                //$('.navbar-header').addClass('col-xs-1');
+                //$('.navbar-header').removeClass('col-xs-2');
             }
             else {
-                $('.navbar-header').removeClass('col-xs-1');
-                $('.navbar-header').addClass('col-xs-2');
+                //$('.navbar-header').removeClass('col-xs-1');
+                //$('.navbar-header').addClass('col-xs-2');
             }
         }
         else {
             $(".logo").attr("src","img/logo_putih.png");
             $('.logo').addClass('logo-small');
-            $('.navbar-brand img').css({'width':'132px'});
-            $('.navbar-brand img').css({'transform':'translateY(-50%)'});
-            $('.navbar-header').removeClass('col-xs-1');
-            $('.navbar-header').addClass('col-xs-2');
+            //$('.navbar-brand img').css({'width':'132px'});
+            //$('.navbar-brand img').css({'transform':'translateY(-50%)'});
+            //$('.navbar-header').removeClass('col-xs-1');
+            //$('.navbar-header').addClass('col-xs-2');
         }
         if ($('.navbar-custom').hasClass('affix-top')) {
             $('.navcontainer').css({'background-color':'transparent'});
