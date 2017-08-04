@@ -31,47 +31,24 @@
     })
 
     $(window).on("load resize scroll",function(e){ 
-        if ($(window).width() > 759) {
-           $('.navtop').append($('.navbar-collapse'));
-           $('.navbar-collapse').removeClass('navbar-onclick');
-           $('.navbar-collapse').css({'float':'right'});
-           //$('.form-control-outer').addClass('col-md-8');
-           //$('.form-control-outer').addClass('col-md-offset-2');
-        }
-        else {
-           $('.navcontainer').append($('.navbar-collapse'));
-           $('.navbar-collapse').css({'float':'left'});
-           $('.navbar-collapse').addClass('navbar-onclick');
-           //$('.form-control-outer').removeClass('col-md-8');
-           //$('.form-control-outer').removeClass('col-md-offset-2');
-        }
-        if ($(window).width() < 870) {
-            //$(".logo").attr("src","img/logo_putih_2.png");
-            //$('.logo').addClass('logo-small');
-            $('.logo-small').css({'width':'54px'});
-            $('.logo-small').css({'transform':'translateY(-60%)'});
-            if ($(window).width() > 760) {
-                //$('.navbar-header').addClass('col-xs-1');
-                //$('.navbar-header').removeClass('col-xs-2');
-            }
-            else {
-                //$('.navbar-header').removeClass('col-xs-1');
-                //$('.navbar-header').addClass('col-xs-2');
-            }
-        }
-        else {
-            //$(".logo").attr("src","img/logo_putih.png");
-            //$('.logo').addClass('logo-small');
-            //$('.navbar-brand img').css({'width':'132px'});
-            //$('.navbar-brand img').css({'transform':'translateY(-50%)'});
-            //$('.navbar-header').removeClass('col-xs-1');
-            //$('.navbar-header').addClass('col-xs-2');
-        }
         if (($(window).width() < 768) && ($('.navbar-custom').hasClass('affix-top'))) {
             $('.navbar-custom').css({'padding-top':'8px'});
+            $('.search-nav-1').css({'display': 'none'});
         }
         else {
             //$('.navcontainer').css({'background-color':'#ec651c'});
+            if (($(window).width() >= 768) && ($('.navbar-custom').hasClass('affix-top'))) {
+                $('.navbar-custom').css({'padding-top':'25px'});
+            }
+            else {
+                if (($(window).width() >= 768) && !($('.navbar-custom').hasClass('affix-top'))) {
+                    $('.navbar-custom').css({'padding-top':'8px'});
+                    $('.navbar-custom').css({'height':'42px'});
+                }
+                else {
+                    $('.navbar-custom').css({'height':'96px'});
+                }
+            }
         }
         if ($(window).width() < 480) {
             $(".search-nav-in").attr("placeholder","Cari barang atau masukkan URL");
