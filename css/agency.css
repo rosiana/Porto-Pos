@@ -253,7 +253,7 @@ fieldset[disabled] .btn-xl.active {
   position: relative;
 }
 
-.fa-search {
+.fa-search-custom {
   position: absolute;
   top: 14px;
   right: 10px;
@@ -1072,4 +1072,112 @@ body {
 .no-gutter-nav > [class*='col-'] {
     padding-right:0;
     padding-left:0;
+}
+
+.sidebar-overlay {
+  display: none;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  top: 0;
+  left: 0;
+}
+
+.sidebar {
+  display: none;
+  background-color: #ec651c;
+  position: absolute;
+  height: 100%;
+  width: 272px;
+  float: left;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  padding-top: 36px;
+  padding-left: 16px;
+}
+
+.profile {
+  position: relative;
+}
+
+.profpic {
+  width: 48px;
+  height: 48px;
+  margin-left: 16px;
+}
+
+.profile-name {
+  margin-left: 16px;
+  margin-top: 8px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.profile-name-edit {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.stat {
+  position: relative;
+  padding: 16px;
+  background-color: #fff;
+  margin-right: 15px;
+}
+
+.saldo-title {
+  font-size: 12px;
+  color: #ec651c;
+}
+
+.saldo-amount {
+  font-size: 14px;
+  color: #ec651c;
+  font-weight: 600;
+}
+
+.topup-title {
+  transform: translateY(10px);
+  float: right;
+  font-weight: 600;
+  color: #ec651c;
+}
+
+.sidebar-menu {
+  background-color: #fff;
+  margin-right: 15px;
+  margin-left: -1px;
+  border-top: solid 2px #f4f4f4;
+}
+
+.sidebar-list,
+.sidebar-list-bottom {
+  list-style: none;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.sidebar-list li,
+.sidebar-list-bottom li {
+  height: 52px;
+  line-height: 52px;
+  vertical-align: middle;
+  border-bottom: solid 1px #f4f4f4;
+}
+
+.sidebar-icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.remainder {
+  transform: translateY(-10px);
+  background-color: #fff;
+  margin-right: 15px;
+  margin-left: -1px;
+  border-top: solid 1px #f4f4f4;
 }
