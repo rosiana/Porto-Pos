@@ -1301,11 +1301,16 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
 }
 
 .nav-menu-logged-out {
-  display: none;
+  display: block;
 }
 
 .nav-menu-logged-in {
+  display: none;
   margin-top: 8px;
+}
+
+.nav-menu-logged-in-2 {
+  display: none;
 }
 
 .menu-logged-in {  
@@ -1455,7 +1460,7 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
     top: 0;
     right: 0;
     height: 0;
-    background-color: #fff;
+    background-color: transparent;
     width: 60px;
     height: 44px;
   }
