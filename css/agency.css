@@ -258,10 +258,10 @@ fieldset[disabled] .btn-xl.active {
   .products-caption {
     padding: 16px;
     height: 124px !important;
-    border: solid 1px #ddd;
+    border: solid 1px #eee;
   }
   .product-img {
-    border: solid 1px #ddd;
+    border: solid 1px #eee;
     border-bottom: none;
   }
   .product-store {
@@ -369,10 +369,10 @@ header .intro-text .intro-heading {
   .products-caption {
     padding: 8px;
     height: 92px !important;
-    border: solid 1px #ddd;
+    border: solid 1px #eee;
   }
   .product-img {
-    border: solid 1px #ddd;
+    border: solid 1px #eee;
     border-bottom: none;
   }
   .product-store {

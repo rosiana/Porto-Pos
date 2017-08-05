@@ -56,7 +56,7 @@
                                 <a href="#login">Login</a>
                             </li>
                             <li>
-                                <a href="#register">Register</a>
+                                <a href="#myModal" role="button" data-toggle="modal">Register</a>
                             </li>
                         </ul>      
                     </div>
@@ -519,6 +519,27 @@
                     <li>Ketentuan</li>
                     <li>About</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2>Login</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email atau Username" id="name">
+                        <input type="password" class="form-control" placeholder="Password" id="name">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
             </div>
         </div>
     </div>
