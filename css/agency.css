@@ -1088,9 +1088,21 @@ body {
   font-size: 12px;
 }
 
+.modal {
+  z-index: 99999;
+}
+
+body.modal-open .modal[style]:not([style='display: none;']) {
+    display: flex !important;
+    height: 100%;
+} 
+
+body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
+    margin: auto;
+}
+
 .modal-dialog {
   width: 400px;
-  z-index: 9999999;
   margin: 0 auto;
 }
 
@@ -1109,6 +1121,33 @@ body {
   border: solid 1px #eee !important;
   height: 40px;
   margin-bottom: 16px;
+}
+
+.btn-trans,
+.btn-green {
+  padding: 8px 16px !important;
+  padding-top: 6px !important;
+  border-radius: 2px;
+  border: none;
+}
+
+.btn-trans {
+  background-color: transparent;
+  border: solid 1px #fff;
+}
+
+.btn-green {
+  background-color: #03b140;
+}
+
+.btn-nav {
+  transform: translateY(9px);
+  height: 32px;
+  margin-left: 8px;
+}
+
+.navbar-right {
+  transform: translateX(-16px);
 }
 
 @media (max-width: 479px) {

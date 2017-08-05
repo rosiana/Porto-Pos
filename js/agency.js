@@ -78,6 +78,12 @@
         else {
             $('.logo-center').css({'width': '152px'});
         }
+        if (($(window).width() >= 768) && ($(window).width() <= 991)) {
+            $('.search-nav-test').addClass('col-xs-5');
+            $('.search-nav-test').removeClass('col-xs-6');
+            $('.nav-menu-test').addClass('col-xs-4');
+            $('.nav-menu-test').removeClass('col-xs-3');
+        }
     })
 
 
