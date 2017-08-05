@@ -113,68 +113,208 @@
             <!-- /.container-fluid -->
         </nav>
 
-        <section id="item">
-            <div class="container item-product-container">
-                <div class="row bcumb">
-                    <div class="col-xs-12 breadcrumb">
-                    <a href="#" class="link-bc">Home</a> <i class="fa fa-chevron-right" aria-hidden="true"></i> <a href="#" class="link-bc">Gadget</a> <i class="fa fa-chevron-right" aria-hidden="true"></i> Canon EOS Rebel T5 Digital SLR Camera Kit with EF-S 18-55mm IS II Lens
-                    </div>
+        <section id="cart">
+            <div class="container cart-container">
+                <div class="row header-cart">
+                    <h2 class="section-heading terlaris normal-page-heading">Keranjang Belanja</h2>
                 </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 product-pics">
-                        <img class="pic-main" src="img/products/kamera.jpg" class="img-responsive" alt="">
-                        <div class="row pic-small-row">
-                            <div class="col-xs-3 pic-small-col">
-                                <img class="pic-small" src="img/products/kamera.jpg" class="img-responsive" alt="">
-                            </div>
-                            <div class="col-xs-3 pic-small-col">
-                                <img class="pic-small" src="img/products/kamera-2.jpg" class="img-responsive" alt="">
-                            </div>
-                            <div class="col-xs-3 pic-small-col">
-                                <img class="pic-small" src="img/products/kamera-3.jpg" class="img-responsive" alt="">
-                            </div>
-                            <div class="col-xs-3 pic-small-col">
-                                <img class="pic-small" src="img/products/kamera-4.jpg" class="img-responsive" alt="">
+                <div class="row table-unit">
+                    <div class="row table-entry table-head">
+                        <div class="table-header">
+                            <p>Pembelian dari: <b>Amazon</b> (dikirim dari Amerika Serikat)</p>
+                        </div>  
+                    </div>
+                    <div class="row table-entry">
+                        <div class="col-sm-6 item-detail">
+                            <div class="row">
+                               <div class="col-xs-3 cart-item-photo">
+                                    <img src="img/products/product8.png" class="img-responsive img-cart" alt="">
+                               </div> 
+                               <div class="col-xs-9 cart-item-detail">
+                                    <h5 class="cart-item-name">Carmina Chelsea Boots <span class="item-options">&ndash; Brown, 8</h5>
+                                    <p class="sum-weight">1 Barang (1 kg) x Rp 8.750.000</p>
+                                    <p class="sum-weight">Catatan Pembelian</p>
+                                    <p class="note-each">Metal shoe cap + shoe tree inside</p>
+                               </div> 
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-5 col-sm-6 product-desc">
-                        <img class="store-logo" src="img/amazon-item.png" class="img-responsive" alt="">
-                        <h3 class="item-name">Canon EOS Rebel T5 Digital SLR Camera Kit with EF-S 18-55mm IS II Lens</h3>
-                        <h4 class="item-price-1">Rp 7.296.751</h4>
-                        <p class="item-desc">Style:18-55mm | Configuration:Base <br />Perfect for families, budding photo enthusiasts and first-time SLR users alike, the EOS Rebel T5 makes it easy to capture movies and photos that are nothing short of dazzling. It features a powerful 18.0 Megapixel CMOS (APS-C) image sensor and Canon’s DIGIC 4 Image Processor for easy recording of HD video and high-resolution photos and has a huge 3.0-inch LCD screen for Live View recording and review. With a 63-zone, Dual-layer metering system, an expanded ISO range for outstanding operation in less-than-perfect light, shooting modes like Scene Intelligent Auto to take the guesswork out of complex shots plus creative options like Canon's Basic+ function and Creative Auto, the EOS Rebel T5 is ready for anything.</p>
-                        <p class="see-more">Lihat selengkapnya di situs <i class="fa fa-chevron-right" aria-hidden="true"></i></p>
-                    </div>
-                    <div class="col-md-3 col-sm-12 product-buy">
-                        <div class="box">
-                            <div class="form-group buy-item">
-                                <label for="sel1">Pilihan Produk</label>
-                                <select class="form-control" id="sel1">
-                                    <option>Certified Refurbished</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                  </select>
-                                <label for="sel2">Jumlah</label>
-                                <div class="input-group" id="sel2">
-                                      <span class="input-group-btn">
-                                          <button type="button" class="btn btn-default btn-number btn-pm" disabled="disabled" data-type="minus" data-field="quant[1]">
-                                              <span class="fa fa-minus"></span>
-                                          </button>
-                                      </span>
-                                      <input type="text" name="quant[1]" class="form-control input-number input-pm" value="1" min="1" max="10">
-                                      <span class="input-group-btn">
-                                          <button type="button" class="btn btn-default btn-number btn-pm" data-type="plus" data-field="quant[1]">
-                                              <span class="fa fa-plus"></span>
-                                          </button>
-                                      </span>
-                                  </div>
-                                <label for="note">Catatan</label>
-                                <textarea class="form-control" rows="4" id="note" placeholder="Warna/model/catatan pengembalian jika tidak tersedia..."></textarea>
-                            <h3 class="item-price">Rp 7.296.751<small>*</small></h3>   
-                            <p class="note-small">*Harga belum termasuk ongkos kirim</p>                        
+                        <div class="col-sm-3 item-edit-delete">
+                            <div class="pull-right edit-delete-links">
+                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+                                <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus</a>
                             </div>
-                            <div class="btn btn-primary btn-default btn-block btn-orange btn-buy">Beli Sekarang</div>
+                        </div>
+                        <div class="col-sm-3 item-price-cart">
+                            <div class="edit-delete-links edit-delete-links-2">
+                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+                                <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus</a>
+                            </div>
+                            <p class="pull-right price-each">Rp 8.750.000</p>
+                        </div>
+                    </div>
+                    <div class="row table-entry">
+                        <div class="col-sm-6 item-detail">
+                            <div class="row">
+                               <div class="col-xs-3 cart-item-photo">
+                                    <img src="img/products/product8.png" class="img-responsive img-cart" alt="">
+                               </div> 
+                               <div class="col-xs-9 cart-item-detail">
+                                    <h5 class="cart-item-name">Carmina Chelsea Boots <span class="item-options">&ndash; Brown, 8</h5>
+                                    <p class="sum-weight">1 Barang (1 kg) x Rp 8.750.000</p>
+                                    <p class="sum-weight">Catatan Pembelian</p>
+                                    <p class="note-each">Metal shoe cap + shoe tree inside</p>
+                               </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-3 item-edit-delete">
+                            <div class="pull-right edit-delete-links">
+                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+                                <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 item-price-cart">
+                            <div class="edit-delete-links edit-delete-links-2">
+                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+                                <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus</a>
+                            </div>
+                            <p class="pull-right price-each">Rp 8.750.000</p>
+                        </div>
+                    </div>
+                    <div class="row table-entry">
+                        <div class="col-sm-6 item-detail">
+                            <div class="row">
+                               <div class="col-xs-3 cart-item-photo">
+                                    <img src="img/products/product8.png" class="img-responsive img-cart" alt="">
+                               </div> 
+                               <div class="col-xs-9 cart-item-detail">
+                                    <h5 class="cart-item-name">Carmina Chelsea Boots <span class="item-options">&ndash; Brown, 8</h5>
+                                    <p class="sum-weight">1 Barang (1 kg) x Rp 8.750.000</p>
+                                    <p class="sum-weight">Catatan Pembelian</p>
+                                    <p class="note-each">Metal shoe cap + shoe tree inside</p>
+                               </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-3 item-edit-delete">
+                            <div class="pull-right edit-delete-links">
+                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+                                <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 item-price-cart">
+                            <div class="edit-delete-links edit-delete-links-2">
+                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+                                <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus</a>
+                            </div>
+                            <p class="pull-right price-each">Rp 8.750.000</p>
+                        </div>
+                    </div>
+                    <div class="row table-entry total-pay-table">
+                        <div class="col-sm-6 item-detail item-detail-last">
+                            <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus Semua</a>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="pull-right edit-delete-links total-tagihan">
+                                Total Tagihan
+                            </div>
+                        </div>
+                        <div class="col-sm-3 item-price-cart">
+                            <p class="pull-right price-each price-each-table">Rp 8.750.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row table-unit">
+                    <div class="row table-entry table-head">
+                        <div class="table-header">
+                            <p>Pembelian dari: <b>Bukalapak</b> (dikirim dari Jakarta)</p>
+                        </div>  
+                    </div>
+                    <div class="row table-entry">
+                        <div class="col-sm-6 item-detail">
+                            <div class="row">
+                               <div class="col-xs-3 cart-item-photo">
+                                    <img src="img/products/product8.png" class="img-responsive img-cart" alt="">
+                               </div> 
+                               <div class="col-xs-9 cart-item-detail">
+                                    <h5 class="cart-item-name">Carmina Chelsea Boots <span class="item-options">&ndash; Brown, 8</h5>
+                                    <p class="sum-weight">1 Barang (1 kg) x Rp 8.750.000</p>
+                                    <p class="sum-weight">Catatan Pembelian</p>
+                                    <p class="note-each">Metal shoe cap + shoe tree inside</p>
+                               </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-3 item-edit-delete">
+                            <div class="pull-right edit-delete-links">
+                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+                                <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 item-price-cart">
+                            <div class="edit-delete-links edit-delete-links-2">
+                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+                                <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus</a>
+                            </div>
+                            <p class="pull-right price-each">Rp 8.750.000</p>
+                        </div>
+                    </div>
+                    <div class="row table-entry total-pay-table">
+                        <div class="col-sm-6 item-detail item-detail-last">
+                            <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus Semua</a>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="pull-right edit-delete-links total-tagihan">
+                                Total Tagihan
+                            </div>
+                        </div>
+                        <div class="col-sm-3 item-price-cart">
+                            <p class="pull-right price-each price-each-table">Rp 8.750.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row table-unit">
+                    <div class="row table-entry table-head">
+                        <div class="table-header">
+                            <p>Pembelian dari: <b>Bukalapak</b> (dikirim dari Bandung)</p>
+                        </div>  
+                    </div>
+                    <div class="row table-entry">
+                        <div class="col-sm-6 item-detail">
+                            <div class="row">
+                               <div class="col-xs-3 cart-item-photo">
+                                    <img src="img/products/product8.png" class="img-responsive img-cart" alt="">
+                               </div> 
+                               <div class="col-xs-9 cart-item-detail">
+                                    <h5 class="cart-item-name">Carmina Chelsea Boots <span class="item-options">&ndash; Brown, 8</h5>
+                                    <p class="sum-weight">1 Barang (1 kg) x Rp 8.750.000</p>
+                                    <p class="sum-weight">Catatan Pembelian</p>
+                                    <p class="note-each">Metal shoe cap + shoe tree inside</p>
+                               </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-3 item-edit-delete">
+                            <div class="pull-right edit-delete-links">
+                                <a><i class="fa fa-pencil edit-cart" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 item-price-cart">
+                            <div class="edit-delete-links edit-delete-links-2">
+                                <a><i class="fa fa-pencil edit-cart" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            </div>
+                            <p class="pull-right price-each">Rp 8.750.000</p>
+                        </div>
+                    </div>
+                    <div class="row table-entry total-pay-table">
+                        <div class="col-sm-6 item-detail item-detail-last">
+                            <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus Semua</a>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="pull-right edit-delete-links total-tagihan">
+                                Total Tagihan
+                            </div>
+                        </div>
+                        <div class="col-sm-3 item-price-cart">
+                            <p class="pull-right price-each price-each-table">Rp 8.750.000</p>
                         </div>
                     </div>
                 </div>

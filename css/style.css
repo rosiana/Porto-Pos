@@ -1512,6 +1512,127 @@ section#item {
   border: solid 1px #ddd !important;
 }
 
+section#cart {
+  padding: 88px 0;
+}
+
+.table-entry {
+  background-color: #fff;
+}
+
+.header-cart,
+.table-unit {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.table-entry {
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: solid 1px #ddd;
+}
+
+.table-unit {  
+  border: solid 2px #ddd;
+  margin-bottom: 32px;
+}
+
+.img-cart {
+  width: 100%;
+  height: auto;
+  padding-left: 0;
+  padding-top: 16px;
+  margin-left: 0;
+}
+
+.cart-item-detail {
+  padding-top: 16px;
+}
+
+.cart-item-name {
+  margin-top: 0;
+  margin-bottom: 4px;
+  text-transform: none;
+}
+
+.item-options {
+  font-size: 14px;
+  color: #777;
+  font-weight: 400;
+}
+
+.sum-weight {
+  color: #777;
+  font-size: 12px;
+}
+
+.note-each {
+  transform: translateY(-10px);
+}
+
+.price-each {
+  margin-top: 16px;
+  font-weight: 400;
+}
+
+.price-each-table {
+  font-size: 16px;
+  margin-bottom: 0;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.table-header {
+  margin: 16px;
+  margin-top: 12px;
+}
+
+.item-detail-last {
+  transform: translateY(14px);
+}
+
+.total-tagihan {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.table-head {
+  background-color: #f4f4f4;
+  height: 48px;
+}
+
+.total-pay-table {
+  height: 48px;
+}
+
+.item-edit-delete {
+  height: 131px;
+}
+
+.edit-delete-links {
+  margin-top: 16px;
+}
+
+.edit-delete-links a i {
+  color: #777;
+}
+
+.edit-cart {
+  margin-right: 16px;
+}
+
+.buy-from {
+  margin-bottom: 0;
+}
+
+.total-pay-table {
+    border-bottom: none;
+}
+
+.edit-delete-links i {
+  margin-right: 4px;
+}
+
 @media (max-width: 479px) {
   .container {
     padding-left: 16px;
@@ -1631,12 +1752,41 @@ section#item {
     text-transform: uppercase;
     font-weight: 600;
   }
+  .item-edit-delete {
+    display: none;
+  }
+  .total-pay-table {
+    border-bottom: none;
+  }
+  .edit-delete-links {
+    display: none;
+  }
+  .edit-delete-links-2 {
+    transform: translateY(4px);
+    display: inline-block;
+  }
+  .price-each-table {
+    margin-top: 0;
+    transform: translateY(-10px);
+  }
+  .table-head {
+    height: auto;
+  }
+  .table-header p {
+    margin-bottom: 0;
+  }
+  .table-unit {
+    margin-bottom: 16px;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
   .container {
     padding-left: 24px;
     padding-right: 24px;
+  }
+  .edit-delete-links-2 {
+    display: none;
   }
   .row-products {
     padding-left: 8px;
@@ -1674,6 +1824,23 @@ section#item {
   section#item {
     padding-top: 128px;
     padding-bottom: 0;
+  }
+  .item-edit-delete {
+    display: none;
+  }
+  .total-pay-table {
+    border-bottom: none;
+  }
+  .edit-delete-links {
+    display: none;
+  }
+  .edit-delete-links-2 {
+    transform: translateY(4px);
+    display: inline-block;
+  }
+  .price-each-table {
+    margin-top: 0;
+    transform: translateY(-10px);
   }
   .product-desc {
     margin-top: 0;
@@ -1723,6 +1890,10 @@ section#item {
   .fa-search-small {
     display: none;
   }
+
+  .table-unit {
+    margin-bottom: 24px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -1732,7 +1903,11 @@ section#item {
     padding-right: 8px;
     padding-left: 8px;
   }
-  .item-product-container {
+  .edit-delete-links-2 {
+    display: none;
+  }
+  .item-product-container,
+  .cart-container {
     width: 728px;
   }
   .navbar-custom,
@@ -1805,10 +1980,14 @@ section#item {
     padding-right: 8px;
     padding-left: 8px;
   }
+  .edit-delete-links-2 {
+    display: none;
+  }
   .navtop-1 {
     display: block;
   }
-  .item-product-container {
+  .item-product-container,
+  .cart-container {
     width: 880px;
   }
   .navtop-2 {
@@ -1872,6 +2051,9 @@ section#item {
   .no-gutter > [class*='col-'] {
     padding-right: 16px;
     padding-left: 16px;
+  }
+  .edit-delete-links-2 {
+    display: none;
   }
   .navtop-1 {
     display: block;
