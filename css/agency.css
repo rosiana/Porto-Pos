@@ -362,13 +362,13 @@ header .intro-text .intro-heading {
      text-overflow: ellipsis;
      display: -webkit-box;
      line-height: 18px;     /* fallback */
-     max-height: 36px;      /* fallback */
+     max-height: 40px;      /* fallback */
      -webkit-line-clamp: 2; /* number of lines to show */
      -webkit-box-orient: vertical;
   }
   .products-caption {
     padding: 8px;
-    height: 96px !important;
+    height: 92px !important;
     border: solid 1px #ddd;
   }
   .product-img {
@@ -379,7 +379,7 @@ header .intro-text .intro-heading {
     font-family: 'Open Sans', sans-serif;
     text-align: left;
     position: absolute;
-    bottom: 26px;
+    bottom: 24px;
     color: #777;
     font-size: 12px;
   }
@@ -391,6 +391,7 @@ header .intro-text .intro-heading {
     bottom: 8px;
     position: absolute;
     font-size: 12px;
+  }
 }
 @media (min-width: 768px) {
   header .intro-text {
@@ -1138,9 +1139,6 @@ body {
   section#guides,
   section#products {
     padding-top: 40px;
-  }
-  section#products {
-    padding-bottom: 40px;
   }
   .products-item {
     margin-bottom: 8px !important;
