@@ -86,6 +86,20 @@
         }
     })
 
+    var checked = false;
+    $('.ingat-saya').click(function() {
+        if (!checked) {
+            $('.checkbox-custom').addClass('fa-check-square-o');
+            $('.checkbox-custom').removeClass('fa-square-o');
+            checked = true;            
+        }
+        else {
+            $('.checkbox-custom').removeClass('fa-check-square-o');
+            $('.checkbox-custom').addClass('fa-square-o');
+            checked = false;     
+        }
+    });
+
 
     $('.navbar-toggle').click(function(){
         $('.navbar-custom').toggleClass('navbar-onclick');

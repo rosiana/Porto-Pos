@@ -26,9 +26,11 @@ a:focus,
 a:active,
 a.active {
   outline: none;
+  text-decoration: none;
 }
 a {
   color: #333;
+  text-decoration: none;
 }
 a:hover,
 a:focus,
@@ -175,7 +177,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom {
   background-color: transparent;
   border-color: transparent;
-  z-index: 9999;
+  z-index: 999;
 }
 .navbar-custom .navbar-brand {
   color: #fed136;
@@ -718,8 +720,41 @@ section#products {
   padding: 64px 0;
   background-color: #f4f4f4;
 }
+.daftar-login {
+  text-align: center;
+  font-weight: 600;
+  color: #ec651c;
+  transform: translateY(8px);
+}
+.separator {
+  height: 40px;
+  position: absolute;
+  border-left: solid 1px #fff;
+  opacity: .3;
+  top: 0;
+  left: 40px;
+}
+.btn-fb i,
+.btn-gplus i {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  font-size: 16px;
+}
+.btn-gplus i {
+  left: 12px;
+}
+.medsos-text {
+  position: absolute;
+  padding-left: 40px;
+  font-weight: 600;
+  color: #fff;
+  top: 10px;
+  left: 16px;
+  text-align: center;
+}
 .category {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 .terlaris {
   margin-bottom: 32px !important;
@@ -1127,7 +1162,7 @@ body {
 }
 
 .modal {
-  z-index: 99999;
+  z-index: 9999999;
 }
 
 body.modal-open .modal[style]:not([style='display: none;']) {
@@ -1169,6 +1204,31 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
   border: none;
 }
 
+.fg-pw {
+  padding-right: 16px;
+  padding-left: 16px;
+  height: 40px;
+}
+
+.checkbox-custom {
+  margin-right: 8px;
+}
+
+.ingat-saya {
+  padding: 0 !important;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.lupa-sandi {
+  text-align: right;
+  font-weight: 600;
+  padding: 0 !important;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #ec651c;
+}
+
 .btn-orange {
   background-color: #ec651c;
   border-radius: 2px;
@@ -1179,9 +1239,11 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
 }
 .btn-fb {
   background-color: #3b5998;
+  position: relative;
 }
 .btn-gplus {
   background-color: #d34836;
+  position: relative;
 }
 .atau {
   text-align: center;
