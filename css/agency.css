@@ -312,7 +312,7 @@ fieldset[disabled] .btn-xl.active {
   font-size: 20px;
 }
 .fa-bars {
-  font-size: 18px;
+  font-size: 22px;
 }
 .guide {
   width: 96px;
@@ -953,7 +953,7 @@ body {
 }
 .fa-bars {
   color: #fff;
-  transform: translateY(12px);
+  transform: translateY(10px);
 }
 .no-gutter-nav > [class*='col-'] {
     padding-right:0;
