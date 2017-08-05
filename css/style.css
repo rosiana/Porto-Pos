@@ -1116,7 +1116,7 @@ body {
 }
 
 .remainder-logged-out {
-  height: 272px;
+  height: 300px;
 }
 
 .category-item {
@@ -1454,6 +1454,8 @@ section#item {
   margin-bottom: 16px;
   box-shadow: none;
   border-radius: 2px;
+}
+#sel1, #note {  
   border: solid 1px #ddd;
 }
 .note-small {
@@ -1469,6 +1471,7 @@ section#item {
   padding-top: 16px;
   border-radius: 4px;
   width: calc(100% - 32px);
+  z-index: 999;
 }
 .see-more {
   color: #ec651c;
@@ -1498,6 +1501,14 @@ section#item {
 }
 .link-bc {
   color: #ec651c;
+}
+
+.btn-pm {
+  border-radius: 2px;
+}
+
+.input-pm {
+  border: solid 1px #ddd !important;
 }
 
 @media (max-width: 479px) {
@@ -1576,6 +1587,9 @@ section#item {
   }
   .buy-item {
     padding-bottom: 0;
+  }
+  .item-desc {
+    margin-top: 24px;
   }
   .box {
     margin-bottom: 64px;

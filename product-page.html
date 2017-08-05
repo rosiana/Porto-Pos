@@ -144,19 +144,29 @@
                     <div class="col-md-3 col-sm-12 product-buy">
                         <div class="box">
                             <div class="form-group buy-item">
+                                <label for="sel1">Pilihan Produk</label>
                                 <select class="form-control" id="sel1">
-                                    <option>Pilihan Produk</option>
+                                    <option>Certified Refurbished</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
                                   </select>
-                                <select class="form-control" id="sel2">
-                                    <option>Jumlah</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                  </select>
-                                <textarea class="form-control" rows="4" id="note" placeholder="Catatan"></textarea>
+                                <label for="sel2">Jumlah</label>
+                                <div class="input-group" id="sel2">
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-pm" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                              <span class="fa fa-minus"></span>
+                                          </button>
+                                      </span>
+                                      <input type="text" name="quant[1]" class="form-control input-number input-pm" value="1" min="1" max="10">
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-pm" data-type="plus" data-field="quant[1]">
+                                              <span class="fa fa-plus"></span>
+                                          </button>
+                                      </span>
+                                  </div>
+                                <label for="note">Catatan</label>
+                                <textarea class="form-control" rows="4" id="note" placeholder="Warna/model/catatan pengembalian jika tidak tersedia..."></textarea>
                             <h3 class="item-price">Rp 7.296.751<small>*</small></h3>   
                             <p class="note-small">*Harga belum termasuk ongkos kirim</p>                        
                             </div>
