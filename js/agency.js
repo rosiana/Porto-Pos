@@ -54,6 +54,11 @@
             $(".search-nav-in").attr("placeholder","Cari barang atau masukkan URL");
             //$('.product-price').css({'display':'none'});
             //$('.product-price-2').css({'display':'block'});
+
+            var modalWidth = $(window).width() - 32;
+
+            $('.modal-dialog').css({'width': modalWidth});
+
         }
         else {
             //$('.product-price').css({'display':'block'});

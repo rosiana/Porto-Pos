@@ -716,6 +716,7 @@ section#guides {
 }
 section#products {
   padding: 64px 0;
+  background-color: #f4f4f4;
 }
 .category {
   background-color: #fff;
@@ -1089,6 +1090,18 @@ body {
 
 .modal-dialog {
   width: 400px;
+  z-index: 9999999;
+  margin: 0 auto;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.page-heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 64px;
 }
 
 .input-standard {
@@ -1150,6 +1163,9 @@ body {
   section#guides,
   section#products {
     padding-top: 40px;
+  }
+  .section#products {
+    background-color: #f4f4f4;
   }
   .products-item {
     margin-bottom: 8px !important;
