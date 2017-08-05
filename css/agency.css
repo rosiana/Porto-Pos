@@ -241,6 +241,7 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
+  
   .product-name {
     font-weight: 600;
     text-align: left;
@@ -332,11 +333,7 @@ header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
 }
-header .intro-text .intro-lead-in {
-  font-size: 18px;
-  line-height: 18px;
-  margin-bottom: 25px;
-}
+
 header .intro-text .intro-heading {
   /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   text-transform: uppercase;
@@ -345,39 +342,33 @@ header .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
 }
-@media (max-width: 767px) {  
-  h4 {
-    font-size: 18px;
+@media (max-width: 767px) {    
+  h3.section-subheading {
+    font-size: 14px !important;
+    line-height: 24px !important;
   }
-  .product-name {
-    font-weight: 400;
-    text-align: left;
-    margin-bottom: 16px !important;
-    font-size: 16px !important;
-    overflow: hidden;
-     text-overflow: ellipsis;
-     display: -webkit-box;
-     line-height: 16px;     /* fallback */
-     max-height: 32px;      /* fallback */
-     -webkit-line-clamp: 2; /* number of lines to show */
-     -webkit-box-orient: vertical;
+  header .intro-text .intro-lead-in {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 25px;
   }
   .product-name {
     font-weight: 600;
     text-align: left;
     margin-bottom: 16px !important;
-    font-size: 16px;
+    font-size: 14px !important;
     overflow: hidden;
      text-overflow: ellipsis;
      display: -webkit-box;
-     line-height: 20px;     /* fallback */
-     max-height: 40px;      /* fallback */
+     line-height: 18px;     /* fallback */
+     max-height: 36px;      /* fallback */
      -webkit-line-clamp: 2; /* number of lines to show */
      -webkit-box-orient: vertical;
   }
   .products-caption {
     padding: 8px;
-    height: 104px !important;
+    height: 96px !important;
     border: solid 1px #ddd;
   }
   .product-img {
@@ -388,8 +379,9 @@ header .intro-text .intro-heading {
     font-family: 'Open Sans', sans-serif;
     text-align: left;
     position: absolute;
-    bottom: 28px;
+    bottom: 26px;
     color: #777;
+    font-size: 12px;
   }
   .product-price {
     font-family: 'Open Sans', sans-serif;
@@ -398,7 +390,7 @@ header .intro-text .intro-heading {
     font-weight: 600;
     bottom: 8px;
     position: absolute;
-  }
+    font-size: 12px;
 }
 @media (min-width: 768px) {
   header .intro-text {
@@ -1137,11 +1129,24 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
-  section#guides {
+  .fa-search-small {
+    display: block;
+    color: #fff;
+    transform: translateY(8px);
+    right: 20px;
+  }
+  section#guides,
+  section#products {
     padding-top: 40px;
   }
+  section#products {
+    padding-bottom: 40px;
+  }
+  .products-item {
+    margin-bottom: 8px !important;
+  }
   .container-guide {
-    height: 880px;
+    height: 918px;
   }
   .form-control-outer {
     padding-right: 0;
@@ -1164,10 +1169,11 @@ body {
     right: 0;
     height: 0;
     background-color: #03b140;
-    width: 80px;
+    width: 60px;
     height: 44px;
   }
   .search-btn p {
+    display: none;
     transform: translateY(10px);
     text-transform: uppercase;
     font-weight: 600;
