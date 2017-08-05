@@ -486,7 +486,7 @@
     
 <!-- Sidebar -->
     <div class="sidebar-overlay"></div>
-    <div class="sidebar">
+    <div class="sidebar sidebar-logged-in">
         <div class="profile row">
             <div class="photo">
                 <img src="img/products/product16.png" class="img-circle profpic" alt="">
@@ -506,13 +506,47 @@
             </div>
             <div class="sidebar-menu">
                 <ul class="sidebar-list">
-                    <li><a href="#myModal" role="button" data-toggle="modal"><i class="fa fa-shopping-cart sidebar-icon" aria-hidden="true"></i> Status Pembelian</a></li>
+                    <li><i class="fa fa-home sidebar-icon" aria-hidden="true"></i> Beranda</li>
+                    <li><i class="fa fa-heart sidebar-icon" aria-hidden="true"></i> Produk Terlaris</li>
+                    <li><i class="fa fa-th-large sidebar-icon" aria-hidden="true"></i> Kategori</li>
+                    <li><i class="fa fa-shopping-cart sidebar-icon" aria-hidden="true"></i> Status Pembelian</li>
                     <li><i class="fa fa-search sidebar-icon" aria-hidden="true"></i> Tracking Order</li>
                     <li><i class="fa fa-check-square-o sidebar-icon" aria-hidden="true"></i></i> Konfirmasi Pembayaran PosPay</li>
                     <li><i class="fa fa-history sidebar-icon" aria-hidden="true"></i> Histori</li>
+                    <li><i class="fa fa-sign-out sidebar-icon" aria-hidden="true"></i> Logout</li>
                 </ul>
             </div>
             <div class="remainder">
+                <ul class="sidebar-list-bottom">
+                    <li class="about-section">Tentang Kami</li>
+                    <li>Sejarah PT. Pos Indonesia</li>
+                    <li>Ketentuan</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar sidebar-logged-out">
+        <div class="profile row">
+            <div class="profile-name">
+                <ul class="login-register-sidebar">
+                    <li>
+                        <a href="#myModal" role="button" class="btn btn-large btn-primary btn-trans btn-nav btn-sidebar" data-toggle="modal">Login</a>
+                    </li>
+                    <li>
+                        <a href="#login" class="btn btn-large btn-primary btn-green btn-nav btn-sidebar">Register</a>
+                    </li>
+                </ul>      
+            </div>
+            <div class="sidebar-menu">
+                <ul class="sidebar-list">
+                    <li><i class="fa fa-home sidebar-icon" aria-hidden="true"></i> Beranda</li>
+                    <li><i class="fa fa-heart sidebar-icon" aria-hidden="true"></i> Produk Terlaris</li>
+                    <li><i class="fa fa-th-large sidebar-icon" aria-hidden="true"></i> Kategori</li>
+                </ul>
+            </div>
+            <div class="remainder remainder-logged-out">
                 <ul class="sidebar-list-bottom">
                     <li class="about-section">Tentang Kami</li>
                     <li>Sejarah PT. Pos Indonesia</li>
@@ -534,11 +568,17 @@
                     <div class="form-group">
                         <input type="text" class="form-control input-standard" placeholder="Email atau Username" id="name">
                         <input type="password" class="form-control input-standard" placeholder="Password" id="name">
+                        <button type="button" class="btn btn-default btn-block btn-orange" data-dismiss="modal">LOGIN</button>
+                        <p class="atau">atau login dengan</p>
+                        <div class="row no gutter">
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-default btn-block btn-orange btn-fb" data-dismiss="modal">FACEBOOK</button>
+                            </div>
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-default btn-block btn-orange btn-gplus" data-dismiss="modal">GOOGLE+</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>

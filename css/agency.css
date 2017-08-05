@@ -947,6 +947,28 @@ body {
   padding-left: 16px;
 }
 
+.sidebar-logged-in {
+  display: none;
+}
+
+.btn-nav.btn-sidebar {
+  padding-left: 31px !important;
+  padding-right: 31px !important;
+  padding-top: 10px !important;
+  height: 40px;
+  margin-bottom: 4px;
+}
+
+.login-register-sidebar {
+  list-style: none;
+  padding-left: 0;
+  transform: translateX(-8px);
+}
+
+.login-register-sidebar li {
+  display: inline-block;
+}
+
 .sidebar-icon {
   color: #aaa;
 }
@@ -1018,14 +1040,13 @@ body {
 .sidebar-list,
 .sidebar-list-bottom {
   list-style: none;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px;
 }
 
 .sidebar-list li,
 .sidebar-list-bottom li {
-  height: 52px;
-  line-height: 52px;
+  height: 48px;
+  line-height: 48px;
   vertical-align: middle;
   font-weight: 600;
 }
@@ -1043,6 +1064,10 @@ body {
   margin-right: 15px;
   margin-left: -1px;
   border-top: solid 1px #f4f4f4;
+}
+
+.remainder-logged-out {
+  height: 272px;
 }
 
 .category-item {
@@ -1126,7 +1151,7 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
 .page-heading {
   text-align: center;
   font-size: 24px;
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .input-standard {
@@ -1144,6 +1169,24 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
   border: none;
 }
 
+.btn-orange {
+  background-color: #ec651c;
+  border-radius: 2px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  height: 40px;
+}
+.btn-fb {
+  background-color: #3b5998;
+}
+.btn-gplus {
+  background-color: #d34836;
+}
+.atau {
+  text-align: center;
+  margin: 16px auto;
+}
 .btn-trans {
   background-color: transparent;
   border: solid 1px #fff;
@@ -1154,7 +1197,7 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
 }
 
 .btn-green {
-  background-color: #03b140;
+  background-color: #fec503;
 }
 
 .btn-nav {
@@ -1249,7 +1292,7 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
     top: 0;
     right: 0;
     height: 0;
-    background-color: #03b140;
+    background-color: #fec503;
     width: 60px;
     height: 44px;
   }
@@ -1319,7 +1362,7 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
     top: 0;
     right: 0;
     height: 0;
-    background-color: #03b140;
+    background-color: #fec503;
     width: 112px;
     height: 50px;
   }
@@ -1381,7 +1424,7 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
     top: 0;
     right: 0;
     height: 0;
-    background-color: #03b140;
+    background-color: #fec503;
     width: 112px;
     height: 50px;
   }
@@ -1440,7 +1483,7 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
     top: 0;
     right: 0;
     height: 0;
-    background-color: #03b140;
+    background-color: #fec503;
     width: 112px;
     height: 50px;
   }
@@ -1499,7 +1542,7 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
     top: 0;
     right: 0;
     height: 0;
-    background-color: #03b140;
+    background-color: #fec503;
     width: 128px;
     height: 50px;
   }
