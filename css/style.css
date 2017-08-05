@@ -1593,7 +1593,9 @@ section#cart {
 
 .total-tagihan {
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 10px !important;
+  font-size: 14px !important;
+  color: #444 !important;
 }
 
 .table-head {
@@ -1631,6 +1633,15 @@ section#cart {
 
 .edit-delete-links i {
   margin-right: 4px;
+}
+
+.cart-item-name {
+  line-height: 20px;  
+  margin-bottom: 0;
+}
+
+.price-each {
+  font-weight: 600;
 }
 
 @media (max-width: 479px) {
@@ -1764,6 +1775,15 @@ section#cart {
   .edit-delete-links-2 {
     transform: translateY(4px);
     display: inline-block;
+    font-size: 12px;
+    color: #777;
+  }
+  .item-detail-last a {
+    font-size: 12px;
+    color: #777 !important;
+  }
+  .item-detail-last a i {    
+    color: #777 !important;
   }
   .price-each-table {
     margin-top: 0;
@@ -1773,10 +1793,16 @@ section#cart {
     height: auto;
   }
   .table-header p {
-    margin-bottom: 0;
+    margin-bottom: -4px;
   }
   .table-unit {
     margin-bottom: 16px;
+  }
+  .normal-page-heading {
+    margin-top: 32px !important;
+  }
+  .cart-item-detail {
+    padding-left: 0;
   }
 }
 
@@ -1894,6 +1920,22 @@ section#cart {
   .table-unit {
     margin-bottom: 24px;
   }
+  .normal-page-heading {
+    margin-top: 32px !important;
+  }
+  .edit-delete-links-2 {
+    transform: translateY(4px);
+    display: inline-block;
+    font-size: 12px;
+    color: #777;
+  }
+  .item-detail-last a {
+    font-size: 12px;
+    color: #777 !important;
+  }
+  .item-detail-last a i {    
+    color: #777 !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -1971,6 +2013,19 @@ section#cart {
   .fa-search-small {
     display: none;
   }
+  
+  .edit-delete-links {
+    transform: translateY(4px);
+    font-size: 12px;
+    color: #777;
+  }
+  .item-detail-last a {
+    font-size: 12px;
+    color: #777 !important;
+  }
+  .item-detail-last a i {    
+    color: #777 !important;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
@@ -2042,6 +2097,18 @@ section#cart {
   }  
   .fa-search-small {
     display: none;
+  }  
+  .edit-delete-links {
+    transform: translateY(4px);
+    font-size: 12px;
+    color: #777;
+  }
+  .item-detail-last a {
+    font-size: 12px;
+    color: #777 !important;
+  }
+  .item-detail-last a i {    
+    color: #777 !important;
   }
 }
 @media (min-width: 1200px) {
@@ -2107,5 +2174,17 @@ section#cart {
   }
   .fa-search-small {
     display: none;
+  }
+  .edit-delete-links {
+    transform: translateY(4px);
+    font-size: 12px;
+    color: #777;
+  }
+  .item-detail-last a {
+    font-size: 12px;
+    color: #777 !important;
+  }
+  .item-detail-last a i {    
+    color: #777 !important;
   }
 }
