@@ -28,13 +28,13 @@ a.active {
   outline: none;
 }
 a {
-  color: #fed136;
+  color: #333;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: #333;
 }
 h1,
 h2,
@@ -938,7 +938,7 @@ body {
   background-color: #ec651c;
   position: fixed;
   height: 100%;
-  width: 272px;
+  width: 280px;
   float: left;
   top: 0;
   left: 0;
@@ -947,14 +947,23 @@ body {
   padding-left: 16px;
 }
 
+.sidebar-icon {
+  color: #aaa;
+}
+
+.about-section {
+  color: #aaa;
+}
+
 .profile {
   position: relative;
 }
 
 .profpic {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   margin-left: 16px;
+  margin-bottom: 16px;
 }
 
 .profile-name {
@@ -988,8 +997,12 @@ body {
   font-weight: 600;
 }
 
+.topup {
+  padding-right: 0;
+}
+
 .topup-title {
-  transform: translateY(10px);
+  transform: translateY(1px);
   float: right;
   font-weight: 600;
   color: #ec651c;
@@ -1014,7 +1027,7 @@ body {
   height: 52px;
   line-height: 52px;
   vertical-align: middle;
-  border-bottom: solid 1px #f4f4f4;
+  font-weight: 600;
 }
 
 .sidebar-icon {
@@ -1134,6 +1147,10 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
 .btn-trans {
   background-color: transparent;
   border: solid 1px #fff;
+}
+
+.btn-trans-orange {
+  border: solid 1px #ec651c;
 }
 
 .btn-green {
