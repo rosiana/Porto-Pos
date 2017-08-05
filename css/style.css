@@ -1012,6 +1012,7 @@ body {
   list-style: none;
   padding-left: 0;
   transform: translateX(-8px);
+  margin-top: 32px;
 }
 
 .login-register-sidebar li {
@@ -1116,7 +1117,7 @@ body {
 }
 
 .remainder-logged-out {
-  height: 300px;
+  height: 400px;
 }
 
 .category-item {
