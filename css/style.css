@@ -1598,6 +1598,30 @@ section#cart {
   color: #444 !important;
 }
 
+.price-total-total {
+  font-weight: 700 !important;
+  font-size: 18px;
+  transform: translateY(-2px);
+}
+
+.total-all {
+  border: solid 2px #ddd;
+  height: 68px;
+}
+
+.total-tagihan-all {
+  text-align: right;
+  line-height: 18px;
+  transform: translateY(4px);
+}
+
+.small-total {
+  font-size: 10px !important;
+  color: #777 !important;
+  font-weight: 400;
+  transform: translateY(-8px) !important;
+}
+
 .table-head {
   background-color: #f4f4f4;
   height: 48px;
@@ -1804,6 +1828,18 @@ section#cart {
   .cart-item-detail {
     padding-left: 0;
   }
+  .total-tagihan-all {
+    text-align: left;
+  }
+  .col-tot {
+    padding-right: 0;
+  }
+  .col-tot-2 {
+    padding-left: 0;
+  }
+  .price-total-total {
+    transform: translateY(8px);
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -1935,6 +1971,18 @@ section#cart {
   }
   .item-detail-last a i {    
     color: #777 !important;
+  }
+  .total-tagihan-all {
+    text-align: left;
+  }
+  .col-tot {
+    padding-right: 0;
+  }
+  .col-tot-2 {
+    padding-left: 0;
+  }
+  .price-total-total {
+    transform: translateY(8px);
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {

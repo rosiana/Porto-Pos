@@ -94,6 +94,12 @@
             }
             
         }
+        if ($(window).width() <= 768) {
+            $('.total-tagihan-all').removeClass('pull-right');
+        }
+        else {
+            $('.total-tagihan-all').addClass('pull-right');
+        }
     })
 
     var checked = false;
