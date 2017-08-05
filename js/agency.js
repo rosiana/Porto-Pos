@@ -39,11 +39,17 @@
             //$('.navcontainer').css({'background-color':'#ec651c'});
             if (($(window).width() >= 768) && ($('.navbar-custom').hasClass('affix-top'))) {
                 $('.navbar-custom').css({'padding-top':'25px'});
+                $('.btn-nav').addClass('btn-empty');
+                $('.btn-nav').removeClass('btn-trans');
+                $('.btn-nav').removeClass('btn-green');
             }
             else {
                 if (($(window).width() >= 768) && !($('.navbar-custom').hasClass('affix-top'))) {
                     $('.navbar-custom').css({'padding-top':'8px'});
                     $('.navbar-custom').css({'height':'42px'});
+                    $('.btn-nav').removeClass('btn-empty');
+                    $('.btn-nav:even').addClass('btn-trans');
+                    $('.btn-nav:odd').addClass('btn-green');
                 }
                 else {
                     $('.navbar-custom').css({'height':'96px'});
@@ -83,6 +89,28 @@
             $('.search-nav-test').removeClass('col-xs-6');
             $('.nav-menu-test').addClass('col-xs-4');
             $('.nav-menu-test').removeClass('col-xs-3');
+        }
+        else {
+            if ($(window).width() > 991) {
+                $('.search-nav-test').addClass('col-xs-6');
+                $('.search-nav-test').removeClass('col-xs-5');
+                $('.nav-menu-test').addClass('col-xs-3');
+                $('.nav-menu-test').removeClass('col-xs-4');
+            }
+        }
+        if ($(window).width() >= 1200) {
+            $('.profile-nav').removeClass('col-xs-8');
+            $('.profile-nav').addClass('col-xs-7');
+            $('.cart-icon-container').removeClass('col-xs-4');
+            $('.cart-icon-container').addClass('col-xs-5');
+        }
+        else {
+            if (($(window).width() < 1200) && ($(window).width() >= 992)) {
+                $('.profile-nav').removeClass('col-xs-7');
+                $('.profile-nav').addClass('col-xs-8');
+                $('.cart-icon-container').removeClass('col-xs-5');
+                $('.cart-icon-container').addClass('col-xs-4');
+            }
         }
     })
 
@@ -155,5 +183,12 @@
         sidebarShown = false;
     });
 
+    $('.btn-login-test').click(function() {
+        $('.sidebar').scrollTop(0);
+        $('.sidebar').css({'display': 'none'});
+        $('.sidebar-overlay').css({'display': 'none'});
+        $('body').css({'overflow': 'scroll'});
+        sidebarShown = false;
+    });
 
 })(jQuery); // End of use strict

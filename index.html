@@ -47,7 +47,7 @@
                         <input type="text" class="form-control search-header search-nav-in" placeholder="Cari barang atau masukkan URL produk" id="name">
                         <i class="fa fa-search fa-search-custom fa-search-nav" aria-hidden="true"></i>
                     </div>
-                    <div class="col-xs-3 nav-menu nav-menu-test">
+                    <div class="col-xs-3 nav-menu nav-menu-test nav-menu-logged-out">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="hidden">
                                 <a href="#page-top"></a>
@@ -60,25 +60,47 @@
                             </li>
                         </ul>      
                     </div>
-                </div>
-                <div class="navtop row no-gutter-nav navtop-2">
-                    <div class="row no-gutter-nav">
-                        <div class="col-xs-3">
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                        </div>
-                        <div class="navbar-header text-center page-scroll col-xs-6 logo-container">
-                            <a class="navbar-brand-1 page-scroll" href="#page-top">                    
-                                <img class="logo logo-center" src="img/logo_putih.png" class="img-responsive" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row no-gutter-nav search-nav-small">
-                        <div class="form-group search search-nav-1 col-xs-12">
-                            <input type="text" class="form-control search-header search-nav-in" placeholder="Cari barang atau masukkan URL produk" id="name">
-                            <i class="fa fa-search fa-search-custom fa-search-nav" aria-hidden="true"></i>
-                        </div>
+                    <div class="col-xs-3 nav-menu nav-menu-test nav-menu-logged-in">
+                        <div class="row no-gutter menu-logged-in">
+                            <div class="col-xs-4 cart-icon-container">
+                                <div class="pull-right">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true">
+                                    <span class="counter">3</span></i> 
+                                </div>
+                            </div>
+                            <div class="col-xs-8 profile-nav">
+                                <div class="pull-right">
+                                    <img src="img/products/product16.png" class="img-circle profpic-nav" alt="">
+                                    <span>Rosi Lutfi<i class="fa fa-chevron-down chevron-profile" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </ul>
                     </div>
                 </div>
+            </div>
+            <div class="navtop row no-gutter-nav navtop-2">
+                <div class="row no-gutter-nav">
+                    <div class="col-xs-3">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <div class="navbar-header text-center page-scroll col-xs-6 logo-container">
+                        <a class="navbar-brand-1 page-scroll" href="#page-top">                    
+                            <img class="logo logo-center" src="img/logo_putih.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="pull-right">
+                            <i class="fa fa-shopping-cart cart-small" aria-hidden="true"><span class="counter">3</span></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutter-nav search-nav-small">
+                    <div class="form-group search search-nav-1 col-xs-12">
+                        <input type="text" class="form-control search-header search-nav-in" placeholder="Cari barang atau masukkan URL produk" id="name">
+                        <i class="fa fa-search fa-search-custom fa-search-nav" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 
@@ -532,7 +554,7 @@
             <div class="profile-name">
                 <ul class="login-register-sidebar">
                     <li>
-                        <a href="#myModal" role="button" class="btn btn-large btn-primary btn-trans btn-nav btn-sidebar" data-toggle="modal">Login</a>
+                        <a href="#myModal" role="button" class="btn btn-large btn-primary btn-trans btn-nav btn-sidebar btn-login-test" data-toggle="modal">Login</a>
                     </li>
                     <li>
                         <a href="#login" class="btn btn-large btn-primary btn-green btn-nav btn-sidebar">Register</a>
@@ -576,8 +598,8 @@
                                 <p>Lupa kata sandi?</p>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-default btn-block btn-orange" data-dismiss="modal">LOGIN</button>
-                        <p class="atau">atau login dengan</p>
+                        <button type="button" class="btn btn-default btn-block btn-orange btn-login-test" data-dismiss="modal">LOGIN</button>
+                        <p class="atau"><span>atau login dengan</span></p>
                         <div class="row no gutter">
                             <div class="col-xs-6">
                                 <button type="button" class="btn btn-default btn-block btn-orange btn-fb" data-dismiss="modal">
