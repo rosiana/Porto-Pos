@@ -128,6 +128,7 @@
         }
 
         if (($(window).width() < 1200) && ($(window).width() >= 992)) {
+            $('.col-count').css({'display': 'block'});
             $('.col-count').removeClass('col-xs-9');
             $('.col-count').removeClass('col-xs-6');
             $('.col-count').addClass('col-xs-8');
@@ -140,6 +141,7 @@
         }
         else {
             if ($(window).width() >= 1200) {
+                $('.col-count').css({'display': 'block'});
                 $('.col-count').removeClass('col-xs-8');
                 $('.col-count').removeClass('col-xs-6');
                 $('.col-count').addClass('col-xs-9');
@@ -152,6 +154,7 @@
             }
             else {
                 if (($(window).width() < 992) && ($(window).width() >= 768)) {
+                    $('.col-count').css({'display': 'block'});
                     $('.col-count').removeClass('col-xs-8');
                     $('.col-count').removeClass('col-xs-9');
                     $('.col-count').addClass('col-xs-6');
@@ -164,6 +167,7 @@
                 }
                 else {
                     $('.col-sort').css({'display': 'none'});
+                    $('.col-count').css({'display': 'none'});
                     $('.filter').css({'display': 'none'});
                     $('.filter-sort').css({'display': 'block'});
                 }

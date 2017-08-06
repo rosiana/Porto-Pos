@@ -1599,6 +1599,7 @@ section#item {
   transform: translateY(-16px);
   font-size: 13px;
   padding: 0;
+  line-height: 22px;
 }
 .breadcrumb i,
 .see-more i {
@@ -1957,6 +1958,7 @@ section#send {
   position: absolute;
   top: 14px;
   left: 0;
+  font-size: 13px;
 }
 .count-product {
   margin-top: 14px;
@@ -1964,6 +1966,12 @@ section#send {
 }
 .sort {
   transform: translateY(6px);
+  border: none !important;
+  border-radius: 0 !important;
+  border-bottom: solid 1px #ddd !important;
+  background-color: transparent;
+  padding-left: 0 !important;
+  font-size: 13px;
 }
 .row-products-all {
   margin-top: 24px;
@@ -2003,6 +2011,33 @@ section#send {
 }
 .row-yellow {
   background-color: #fffcd8;
+}
+
+.breadcrumb-cat {
+  margin-top: 24px;
+  margin-bottom: 0;
+  border-bottom: solid 1px #ddd;
+  border-top: solid 1px #ddd;
+  height: 48px;
+  padding-top: 13px;
+}
+.bcumb-cat {
+  height: 64px;
+}
+.heading-custom {
+  margin-top: 32px !important;
+  margin-bottom: 16px !important;
+  text-transform: none;
+}
+.products-header {
+  height: 48px;
+}
+.nama-kategori {
+  margin-top: 40px !important;
+  text-transform: none;
+}
+.all-pdct {
+  background-color: #fff !important;
 }
 @media (max-width: 479px) {
   .container {
@@ -2233,6 +2268,21 @@ section#send {
     margin-right: -6px;
     margin-left: -6px;
   }
+  .nama-kategori {
+    margin-top: 96px !important;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .chevron-title {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 8px;
+    transform: translateY(-4px);
+  }
+  .row-products-all {
+    margin-top: -40px;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -2337,7 +2387,7 @@ section#send {
     height: 50px;
   }
   .search-btn p {
-    transform: translateY(12px);
+    transform: translateY(6px);
     text-transform: uppercase;
     font-weight: 600;
   }
@@ -2433,6 +2483,21 @@ section#send {
     margin-right: -8px;
     margin-left: -8px;
   }
+  .nama-kategori {
+    margin-top: 96px !important;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .chevron-title {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 8px;
+    transform: translateY(-4px);
+  }
+  .row-products-all {
+    margin-top: -40px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -2502,7 +2567,7 @@ section#send {
     height: 50px;
   }
   .search-btn p {
-    transform: translateY(12px);
+    transform: translateY(6px);
     text-transform: uppercase;
     font-weight: 600;
   }
@@ -2542,7 +2607,7 @@ section#send {
     padding-right: 0 !important;
   }
   .sort-label {
-    left: 48px;
+    left: 72px;
   }
   .btn-back {
     display: block;
@@ -2552,6 +2617,14 @@ section#send {
   }
   .cancel-cart {
     display: none;
+  }  
+  .bcumb-cat {
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+  }
+  .nama-kategori {
+    margin-left: -12px !important;
+    margin-right: -12px !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2618,7 +2691,7 @@ section#send {
     height: 50px;
   }
   .search-btn p {
-    transform: translateY(12px);
+    transform: translateY(6px);
     text-transform: uppercase;
     font-weight: 600;
   }  
@@ -2652,7 +2725,7 @@ section#send {
     padding-right: 0 !important;
   }
   .sort-label {
-    left: 24px;
+    left: 48px;
   }
   .btn-back {
     display: block;
@@ -2673,8 +2746,19 @@ section#send {
     border-right: solid 1px #ddd;
     height: 44px;
   }
+  .bcumb-cat {
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+  }
+  .nama-kategori {
+    margin-left: -12px !important;
+    margin-right: -12px !important;
+  }
 }
 @media (min-width: 1200px) {
+  .sort-label {
+    left: 16px;
+  }
   .container {
     width: 1072px;
   }  
@@ -2781,5 +2865,9 @@ section#send {
     padding-right: 0;
     border-right: solid 1px #ddd;
     height: 44px;
+  }
+  .nama-kategori {
+    margin-left: -4px !important;
+    margin-right: -4px !important;
   }
 }
