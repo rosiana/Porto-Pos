@@ -319,6 +319,7 @@ fieldset[disabled] .btn-xl.active {
   color: #fff;
   opacity: 0.5;
 }
+.fa-arrow-left,
 .fa-bars {
   font-size: 22px;
 }
@@ -969,6 +970,7 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+.fa-arrow-left,
 .fa-bars {
   color: #fff;
   transform: translateY(10px);
@@ -2051,6 +2053,24 @@ section#send {
   background-color: #f4f4f4 !important;
   color: #777 !important;
 }
+.form-section {
+  margin-bottom: 16px;
+}
+.question {
+  font-weight: 600;
+}
+.fa-circle-o {
+  margin-right: 4px;
+}
+.main-form {
+  margin-bottom: 40px;
+}
+
+.cancel-reg {
+  color: #777;
+  transform: translateY(16px);
+  margin-bottom: 48px !important;
+}
 @media (max-width: 479px) {
   .container {
     padding-left: 16px;
@@ -2317,6 +2337,23 @@ section#send {
   .cancel-req {
     margin-top: -8px !important;
     margin-bottom: 8px !important;
+  }
+  .register-heading {
+    margin-top: 0 !important;
+    text-align: center;
+    margin-bottom: 32px !important;
+  }
+  .reg-container {
+    transform: translateY(-24px);
+  }
+  .form-section {
+    margin-top: 32px;
+  }
+  .main-form {
+    transform: translateY(-24px);
+  }
+  .reg-btn-all {
+    margin-top: -24px;
   }
 }
 
@@ -2812,6 +2849,17 @@ section#send {
     display: block;
     padding-right: 8px !important;
   }
+
+  .reg-btn-1 {
+    padding-right: 72px;
+  }
+  .reg-btn-2 {
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+  .reg-btn-3 {
+    padding-left: 72px;
+  }
 }
 @media (min-width: 1200px) {
   .sort-label {
@@ -2934,5 +2982,15 @@ section#send {
   .pag {
     display: block;
     padding-right: 16px !important;
+  }
+  .reg-btn-1 {
+    padding-right: 96px;
+  }
+  .reg-btn-2 {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
+  .reg-btn-3 {
+    padding-left: 96px;
   }
 }
