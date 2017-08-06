@@ -222,4 +222,16 @@
         }
     });
 
+     $('.search-nav-in').click(function() {
+        if ($('.search-nav-in').is(':focus')) {
+            $('.fa-search-nav').css({'opacity': '1'});
+            $('.fa-search-nav').css({'color': '#ddd'});
+            console.log("foc");
+        }
+        else {
+            $('.fa-search-nav').css({'opacity': '0.5'});
+            $('.fa-search-nav').css({'color': '#fff'});
+        }
+    });
+
 })(jQuery); // End of use strict

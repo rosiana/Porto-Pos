@@ -112,6 +112,16 @@
             $('.small-purchase').css({'display':'none'});
             $('.big-purchase').css({'display':'block'});
         }
+        if ($(window).width() <= 991) {
+            $('.category-empty').css({'display':'none'});
+        }
+        else {
+            $('.category-empty').css({'display':'block'});
+        }
+
+        if (($(window).width() >= 768) && ($(window).width() <= 991)) {
+            //$('.filter').removeClass('col-sm-3');
+        }
     })
 
     var checked = false;
@@ -291,6 +301,19 @@ $(".input-number").keydown(function (e) {
         // Ensure that it is a number and stop the keypress
         if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
             e.preventDefault();
+        }
+    });
+
+
+     $('.search-nav-in').click(function() {
+        if ($('.search-nav-in').is(':focus')) {
+            $('.fa-search-nav').css({'opacity': '1'});
+            $('.fa-search-nav').css({'color': '#ddd'});
+            console.log("foc");
+        }
+        else {
+            $('.fa-search-nav').css({'opacity': '0.5'});
+            $('.fa-search-nav').css({'color': '#fff'});
         }
     });
 
