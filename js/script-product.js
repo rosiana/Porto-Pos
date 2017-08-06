@@ -45,6 +45,10 @@
                 $('.profile-nav').addClass('col-xs-8');
                 $('.cart-icon-container').removeClass('col-xs-5');
                 $('.cart-icon-container').addClass('col-xs-4');
+                $('.col-count').removeClass('col-xs-9');
+                $('.col-count').addClass('col-xs-8');
+                $('.col-sort').removeClass('col-xs-3');
+                $('.col-sort').addClass('col-xs-4');
             }
         }
         if (($(window).width() < 1200) && ($(window).width() >= 992)) {
@@ -121,6 +125,49 @@
 
         if (($(window).width() >= 768) && ($(window).width() <= 991)) {
             //$('.filter').removeClass('col-sm-3');
+        }
+
+        if (($(window).width() < 1200) && ($(window).width() >= 992)) {
+            $('.col-count').removeClass('col-xs-9');
+            $('.col-count').removeClass('col-xs-6');
+            $('.col-count').addClass('col-xs-8');
+            $('.col-sort').css({'display': 'block'});
+            $('.col-sort').removeClass('col-xs-3');
+            $('.col-sort').removeClass('col-xs-6');
+            $('.col-sort').addClass('col-xs-4');
+            $('.filter').css({'display': 'block'});
+            $('.filter-sort').css({'display': 'none'});
+        }
+        else {
+            if ($(window).width() >= 1200) {
+                $('.col-count').removeClass('col-xs-8');
+                $('.col-count').removeClass('col-xs-6');
+                $('.col-count').addClass('col-xs-9');
+                $('.col-sort').css({'display': 'block'});
+                $('.col-sort').removeClass('col-xs-4');
+                $('.col-sort').removeClass('col-xs-6');
+                $('.col-sort').addClass('col-xs-3');
+                $('.filter').css({'display': 'block'});
+                $('.filter-sort').css({'display': 'none'});
+            }
+            else {
+                if (($(window).width() < 992) && ($(window).width() >= 768)) {
+                    $('.col-count').removeClass('col-xs-8');
+                    $('.col-count').removeClass('col-xs-9');
+                    $('.col-count').addClass('col-xs-6');
+                    $('.col-sort').css({'display': 'block'});
+                    $('.col-sort').removeClass('col-xs-4');
+                    $('.col-sort').removeClass('col-xs-3');
+                    $('.col-sort').addClass('col-xs-6');
+                    $('.filter').css({'display': 'block'});
+                    $('.filter-sort').css({'display': 'none'});
+                }
+                else {
+                    $('.col-sort').css({'display': 'none'});
+                    $('.filter').css({'display': 'none'});
+                    $('.filter-sort').css({'display': 'block'});
+                }
+            }
         }
     })
 
