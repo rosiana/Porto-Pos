@@ -112,50 +112,40 @@
         <section id="item">
             <div class="container reg-container">
                 <div class="row header-cart">
-                    <h2 class="section-heading terlaris normal-page-heading register-heading">Daftar</h2>
+                    <h2 class="section-heading terlaris normal-page-heading register-heading">Login</h2>
                 </div>
                 <div class="row main-form">
-                    <div class="col-sm-6">
-                        <h5 class="form-section">Akun Kantor Pos Commerce</h5>
-                        <input type="text" class="form-control input-standard" placeholder="Username" id="name">
-                        <input type="text" class="form-control input-standard" placeholder="Email" id="name">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-standard" placeholder="Email atau Username" id="name">
                         <input type="password" class="form-control input-standard" placeholder="Password" id="name">
-                        <input type="password" class="form-control input-standard" placeholder="Ulangi Password" id="name">
-                    </div>
-                    <div class="col-sm-6">
-                        <h5 class="form-section">Data Pribadi</h5>
-                        <input type="text" class="form-control input-standard" placeholder="Nama Lengkap" id="name">
-                        <input type="text" class="form-control input-standard" placeholder="Nomor HP" id="name">
-                        <input type="text" class="form-control input-standard" placeholder="Nomor Identitas (KTP, SIM, Paspor)" id="name">
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <input type="text" class="form-control input-standard" placeholder="Tempat Lahir" id="name">
+                        <div class="row no-gutter fg-pw">
+                            <div class="col-xs-6 ingat-saya">
+                                <a><p><i class="fa fa-square-o checkbox-custom" aria-hidden="true"></i> Ingat saya</p></a>
                             </div>
-                            <div class="col-xs-6">
-                                <div class="input-group date" data-provide="datepicker">
-                                    <input type="text" class="form-control input-standard" placeholder="Tanggal Lahir">
-                                    <div class="input-group-addon">
-                                        <span class="glyphicon glyphicon-th"></span>
-                                    </div>
-                                </div>
+                            <div class="col-xs-6 lupa-sandi">
+                                <p>Lupa kata sandi?</p>
                             </div>
                         </div>
-                        <p class="question">Jenis Kelamin</p>
-                        <p><i class="fa fa-circle-o" aria-hidden="true"></i> Pria</p>
-                        <p><i class="fa fa-circle-o" aria-hidden="true"></i> Wanita</p>
+                        <button type="button" class="btn btn-default btn-block btn-orange btn-login-test btn-login-test-modal" data-dismiss="modal">LOGIN</button>
+                        <p class="atau"><span>atau login dengan</span></p>
+                        <div class="row no gutter">
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-default btn-block btn-orange btn-fb" data-dismiss="modal">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <span class="medsos-text">Facebook</span>
+                                    <div class="separator"></div>
+                                </button>
+                            </div>
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-default btn-block btn-orange btn-gplus" data-dismiss="modal">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                    <span class="medsos-text">Google+</span>
+                                    <div class="separator"></div>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="atau daftar-login">DAFTAR</p>
                     </div>
-                </div>
-                <div class="row reg-btn-all">
-                   <div class="col-sm-4 col-xs-12 reg-btn-1">
-                        <div class="btn btn-default btn-primary btn-orange btn-block btn-back"><i class="fa fa-chevron-left btn-chev-icon" aria-hidden="true"></i> Batal</div>
-                   </div>
-                   <div class="col-sm-4 col-xs-12 reg-btn-2">
-                        <div class="btn btn-default btn-primary btn-orange btn-block btn-request">Simpan</div>
-                   </div>
-                   <div class="col-sm-4 col-xs-12 reg-btn-3">
-                        <div class="btn btn-default btn-primary btn-orange btn-block btn-request">Registrasi PosPay <i class="fa fa-chevron-right btn-chev-icon" aria-hidden="true"></i></div>
-                   </div>
-                   <p class="atau daftar-login cancel-cart cancel-reg">BATAL</p>
                 </div>
             </div>
         </section>
@@ -173,6 +163,7 @@
         </section>
     </div>
     
+<!-- Sidebar -->
 <!-- Sidebar -->
     <div class="sidebar-overlay"></div>
     <div class="sidebar sidebar-logged-in">

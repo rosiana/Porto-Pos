@@ -970,6 +970,12 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+select {
+  height: 40px !important;
+}
+textarea {
+  padding-top: 8px !important;
+}
 .fa-arrow-left,
 .fa-bars {
   color: #fff;
@@ -1308,13 +1314,19 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
   color: #ec651c;
 }
 
-.btn-orange {
+.btn-orange,
+.btn-orange:focus,
+.btn-orange:active {
   background-color: #ec651c;
   border-radius: 2px;
   font-weight: 600;
   color: #fff;
   border: none;
   height: 40px;
+}
+
+.btn-orange:hover {
+  background-color: #f68142 !important;
 }
 
 .btn-chev-icon {
@@ -2579,6 +2591,23 @@ section#send {
   .muted-custom {
     margin-bottom: 40px !important;
   }
+  .register-heading {
+    margin-top: 0 !important;
+    text-align: center;
+    margin-bottom: 32px !important;
+  }
+  .reg-container {
+    transform: translateY(-24px);
+  }
+  .form-section {
+    margin-top: 32px;
+  }
+  .main-form {
+    transform: translateY(-24px);
+  }
+  .reg-btn-all {
+    margin-top: -24px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -2713,6 +2742,9 @@ section#send {
   .pag {
     display: block;
     padding-right: 8px !important;
+  }  
+  .cancel-reg {
+    display: none;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2859,6 +2891,9 @@ section#send {
   }
   .reg-btn-3 {
     padding-left: 72px;
+  }  
+  .cancel-reg {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -2992,5 +3027,8 @@ section#send {
   }
   .reg-btn-3 {
     padding-left: 96px;
+  }
+  .cancel-reg {
+    display: none;
   }
 }

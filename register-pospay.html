@@ -112,50 +112,81 @@
         <section id="item">
             <div class="container reg-container">
                 <div class="row header-cart">
-                    <h2 class="section-heading terlaris normal-page-heading register-heading">Daftar</h2>
+                    <h2 class="section-heading terlaris normal-page-heading register-heading">Registrasi PosPay</h2>
                 </div>
                 <div class="row main-form">
                     <div class="col-sm-6">
-                        <h5 class="form-section">Akun Kantor Pos Commerce</h5>
-                        <input type="text" class="form-control input-standard" placeholder="Username" id="name">
-                        <input type="text" class="form-control input-standard" placeholder="Email" id="name">
-                        <input type="password" class="form-control input-standard" placeholder="Password" id="name">
-                        <input type="password" class="form-control input-standard" placeholder="Ulangi Password" id="name">
-                    </div>
-                    <div class="col-sm-6">
-                        <h5 class="form-section">Data Pribadi</h5>
-                        <input type="text" class="form-control input-standard" placeholder="Nama Lengkap" id="name">
-                        <input type="text" class="form-control input-standard" placeholder="Nomor HP" id="name">
-                        <input type="text" class="form-control input-standard" placeholder="Nomor Identitas (KTP, SIM, Paspor)" id="name">
+                        <h5 class="form-section">Data Alamat</h5>
                         <div class="row">
-                            <div class="col-xs-6">
-                                <input type="text" class="form-control input-standard" placeholder="Tempat Lahir" id="name">
+                            <div class="col-sm-6">
+                                <select class="form-control" id="sel1">
+                                    <option>Provinsi</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                  </select>
                             </div>
-                            <div class="col-xs-6">
-                                <div class="input-group date" data-provide="datepicker">
-                                    <input type="text" class="form-control input-standard" placeholder="Tanggal Lahir">
-                                    <div class="input-group-addon">
-                                        <span class="glyphicon glyphicon-th"></span>
-                                    </div>
-                                </div>
+                            <div class="col-sm-6">
+                                <select class="form-control" id="sel1">
+                                    <option>Kota/Kabupaten</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                  </select>
                             </div>
                         </div>
-                        <p class="question">Jenis Kelamin</p>
-                        <p><i class="fa fa-circle-o" aria-hidden="true"></i> Pria</p>
-                        <p><i class="fa fa-circle-o" aria-hidden="true"></i> Wanita</p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <select class="form-control" id="sel1">
+                                    <option>Kecamatan</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                  </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <select class="form-control" id="sel1">
+                                    <option>Desa/Kelurahan</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control input-standard" placeholder="RT" id="name">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control input-standard" placeholder="RW" id="name">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control input-standard" placeholder="No. Rumah" id="name">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control input-standard" placeholder="Kode Pos" id="name">
+                        <textarea class="form-control" rows="4" id="note" placeholder="Alamat Lengkap"></textarea>
+                    </div>
+                    <div class="col-sm-6">
+                        <h5 class="form-section">Informasi Lanjutan</h5>
+                        <select class="form-control" id="sel1">
+                            <option>Pekerjaan</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                        <input type="text" class="form-control input-standard" placeholder="Sumber Dana" id="name">
+                        <input type="text" class="form-control input-standard" placeholder="Nama Ibu Kandung" id="name">
                     </div>
                 </div>
                 <div class="row reg-btn-all">
-                   <div class="col-sm-4 col-xs-12 reg-btn-1">
+                   <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="btn btn-default btn-primary btn-orange btn-block btn-back"><i class="fa fa-chevron-left btn-chev-icon" aria-hidden="true"></i> Batal</div>
                    </div>
-                   <div class="col-sm-4 col-xs-12 reg-btn-2">
-                        <div class="btn btn-default btn-primary btn-orange btn-block btn-request">Simpan</div>
+                   <div class="col-md-3 col-md-offset-6 col-sm-6 col-xs-12">
+                        <div class="btn btn-default btn-primary btn-orange btn-block btn-request">Daftar</div>
                    </div>
-                   <div class="col-sm-4 col-xs-12 reg-btn-3">
-                        <div class="btn btn-default btn-primary btn-orange btn-block btn-request">Registrasi PosPay <i class="fa fa-chevron-right btn-chev-icon" aria-hidden="true"></i></div>
-                   </div>
-                   <p class="atau daftar-login cancel-cart cancel-reg">BATAL</p>
+                   <p class="atau daftar-login cancel-reg">BATAL</p>
                 </div>
             </div>
         </section>
