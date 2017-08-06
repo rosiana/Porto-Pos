@@ -364,4 +364,6 @@ $(".input-number").keydown(function (e) {
         }
     });
 
+     $('.datepicker').datepicker();
+
 })(jQuery); // End of use strict

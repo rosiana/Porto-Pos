@@ -27,6 +27,8 @@
     <link rel="stylesheet" type="text/css" href="vendor/tooltipster/css/tooltipster.bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="vendor/tooltipster/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css" />
 
+    <link rel="stylesheet" type="text/css" href="vendor/datepicker/css/bootstrap-datepicker.css" />
+
 </head>
 
 <body id="page-top" class="index">
@@ -113,281 +115,41 @@
             <!-- /.container-fluid -->
         </nav>
 
-        <section id="cart">
-            <div class="container cart-container">
+        <section id="item">
+            <div class="container">
                 <div class="row header-cart">
-                    <h2 class="section-heading terlaris normal-page-heading">Daftar Pembelian</h2>
-                </div>
-                <div class="row table-unit">
-                    <div class="row table-entry table-head">
-                        <div class="table-header">
-                            <p>Pembelian dari: <b>Amazon</b> (dikirim dari Amerika Serikat)</p>
-                        </div>  
-                    </div>
-                    <div class="row table-entry">
-                        <div class="col-sm-6 item-detail">
-                            <div class="row">
-                               <div class="col-xs-3 cart-item-photo">
-                                    <img src="img/products/product8.png" class="img-responsive img-cart" alt="">
-                               </div> 
-                               <div class="col-xs-9 cart-item-detail">
-                                    <h5 class="cart-item-name">Carmina Chelsea Boots <span class="item-options">&ndash; Brown, 8</h5>
-                                    <p class="sum-weight">1 Barang (1 kg) x Rp 8.750.000</p>
-                                    <p class="sum-weight">Catatan Pembelian</p>
-                                    <p class="note-each">Metal shoe cap + shoe tree inside</p>
-                               </div> 
-                            </div>
-                        </div>
-                        <div class="col-sm-3 item-edit-delete">
-                            <div class="pull-right edit-delete-links">
-                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</a>
-                                <a><i class="fa fa-trash" aria-hidden="true"></i>Hapus</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 item-price-cart">
-                            <div class="edit-delete-links edit-delete-links-2">
-                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</a>
-                                <a><i class="fa fa-trash" aria-hidden="true"></i>Hapus</a>
-                            </div>
-                            <p class="pull-right price-each">Rp 8.750.000</p>
-                        </div>
-                    </div>
-                    <div class="row table-entry">
-                        <div class="col-sm-6 item-detail">
-                            <div class="row">
-                               <div class="col-xs-3 cart-item-photo">
-                                    <img src="img/products/product8.png" class="img-responsive img-cart" alt="">
-                               </div> 
-                               <div class="col-xs-9 cart-item-detail">
-                                    <h5 class="cart-item-name">Carmina Chelsea Boots <span class="item-options">&ndash; Brown, 8</h5>
-                                    <p class="sum-weight">1 Barang (1 kg) x Rp 8.750.000</p>
-                                    <p class="sum-weight">Catatan Pembelian</p>
-                                    <p class="note-each">Metal shoe cap + shoe tree inside</p>
-                               </div> 
-                            </div>
-                        </div>
-                        <div class="col-sm-3 item-edit-delete">
-                            <div class="pull-right edit-delete-links">
-                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</a>
-                                <a><i class="fa fa-trash" aria-hidden="true"></i>Hapus</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 item-price-cart">
-                            <div class="edit-delete-links edit-delete-links-2">
-                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</a>
-                                <a><i class="fa fa-trash" aria-hidden="true"></i>Hapus</a>
-                            </div>
-                            <p class="pull-right price-each">Rp 8.750.000</p>
-                        </div>
-                    </div>
-                    <div class="row table-entry">
-                        <div class="col-sm-6 item-detail">
-                            <div class="row">
-                               <div class="col-xs-3 cart-item-photo">
-                                    <img src="img/products/product8.png" class="img-responsive img-cart" alt="">
-                               </div> 
-                               <div class="col-xs-9 cart-item-detail">
-                                    <h5 class="cart-item-name">Carmina Chelsea Boots <span class="item-options">&ndash; Brown, 8</h5>
-                                    <p class="sum-weight">1 Barang (1 kg) x Rp 8.750.000</p>
-                                    <p class="sum-weight">Catatan Pembelian</p>
-                                    <p class="note-each">Metal shoe cap + shoe tree inside</p>
-                               </div> 
-                            </div>
-                        </div>
-                        <div class="col-sm-3 item-edit-delete">
-                            <div class="pull-right edit-delete-links">
-                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</a>
-                                <a><i class="fa fa-trash" aria-hidden="true"></i>Hapus</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 item-price-cart">
-                            <div class="edit-delete-links edit-delete-links-2">
-                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</a>
-                                <a><i class="fa fa-trash" aria-hidden="true"></i>Hapus</a>
-                            </div>
-                            <p class="pull-right price-each">Rp 8.750.000</p>
-                        </div>
-                    </div>
-                    <div class="row table-entry total-pay-table">
-                        <div class="col-sm-6 item-detail item-detail-last">
-                            <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus Semua</a>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="pull-right edit-delete-links total-tagihan">
-                                Total Per Pengiriman
-                            </div>
-                        </div>
-                        <div class="col-sm-3 item-price-cart">
-                            <p class="pull-right price-each price-each-table">Rp 8.750.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row table-unit">
-                    <div class="row table-entry table-head">
-                        <div class="table-header">
-                            <p>Pembelian dari: <b>Bukalapak</b> (dikirim dari Jakarta)</p>
-                        </div>  
-                    </div>
-                    <div class="row table-entry">
-                        <div class="col-sm-6 item-detail">
-                            <div class="row">
-                               <div class="col-xs-3 cart-item-photo">
-                                    <img src="img/products/product8.png" class="img-responsive img-cart" alt="">
-                               </div> 
-                               <div class="col-xs-9 cart-item-detail">
-                                    <h5 class="cart-item-name">Carmina Chelsea Boots <span class="item-options">&ndash; Brown, 8</h5>
-                                    <p class="sum-weight">1 Barang (1 kg) x Rp 8.750.000</p>
-                                    <p class="sum-weight">Catatan Pembelian</p>
-                                    <p class="note-each">Metal shoe cap + shoe tree inside</p>
-                               </div> 
-                            </div>
-                        </div>
-                        <div class="col-sm-3 item-edit-delete">
-                            <div class="pull-right edit-delete-links">
-                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</a>
-                                <a><i class="fa fa-trash" aria-hidden="true"></i>Hapus</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 item-price-cart">
-                            <div class="edit-delete-links edit-delete-links-2">
-                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</a>
-                                <a><i class="fa fa-trash" aria-hidden="true"></i>Hapus</a>
-                            </div>
-                            <p class="pull-right price-each">Rp 8.750.000</p>
-                        </div>
-                    </div>
-                    <div class="row table-entry total-pay-table">
-                        <div class="col-sm-6 item-detail item-detail-last">
-                            <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus Semua</a>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="pull-right edit-delete-links total-tagihan">
-                                Total Per Pengiriman
-                            </div>
-                        </div>
-                        <div class="col-sm-3 item-price-cart">
-                            <p class="pull-right price-each price-each-table">Rp 8.750.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row table-unit">
-                    <div class="row table-entry table-head">
-                        <div class="table-header">
-                            <p>Pembelian dari: <b>Bukalapak</b> (dikirim dari Bandung)</p>
-                        </div>  
-                    </div>
-                    <div class="row table-entry">
-                        <div class="col-sm-6 item-detail">
-                            <div class="row">
-                               <div class="col-xs-3 cart-item-photo">
-                                    <img src="img/products/product8.png" class="img-responsive img-cart" alt="">
-                               </div> 
-                               <div class="col-xs-9 cart-item-detail">
-                                    <h5 class="cart-item-name">Carmina Chelsea Boots <span class="item-options">&ndash; Brown, 8</h5>
-                                    <p class="sum-weight">1 Barang (1 kg) x Rp 8.750.000</p>
-                                    <p class="sum-weight">Catatan Pembelian</p>
-                                    <p class="note-each">Metal shoe cap + shoe tree inside</p>
-                               </div> 
-                            </div>
-                        </div>
-                        <div class="col-sm-3 item-edit-delete">
-                            <div class="pull-right edit-delete-links">
-                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</a>
-                                <a><i class="fa fa-trash" aria-hidden="true"></i>Hapus</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 item-price-cart">
-                            <div class="edit-delete-links edit-delete-links-2">
-                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</a>
-                                <a><i class="fa fa-trash" aria-hidden="true"></i>Hapus</a>
-                            </div>
-                            <p class="pull-right price-each">Rp 8.750.000</p>
-                        </div>
-                    </div>
-                    <div class="row table-entry total-pay-table">
-                        <div class="col-sm-6 item-detail item-detail-last">
-                            <a><i class="fa fa-trash" aria-hidden="true"></i> Hapus Semua</a>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="pull-right edit-delete-links total-tagihan">
-                                Total Per Pengiriman
-                            </div>
-                        </div>
-                        <div class="col-sm-3 item-price-cart">
-                            <p class="pull-right price-each price-each-table">Rp 8.750.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-table-unit total-all">
-                    <div class="row table-entry total-pay-table">
-                        <div class="col-sm-9 col-xs-6 col-tot">
-                            <div class="pull-right total-tagihan total-tagihan-all">
-                                Total Pembelian<br /><span class="small-total">(belum termasuk ongkir)</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-xs-6 item-price-cart col-tot-2">
-                            <p class="pull-right price-each price-each-table price-total-total">Rp 8.750.000</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="send">
-            <div class="container cart-container">
-                <div class="row header-cart header-cart-2">
-                    <h2 class="section-heading terlaris normal-page-heading">Data Pengiriman</h2>
-                </div>
-                <div class="row table-unit">
-                    <div class="row table-entry table-head">
-                        <div class="col-xs-9 lower-header">
-                            Penerima
-                        </div>
-                        <div class="col-xs-3 lower-header lower-header-2">
-                            Paket Pengiriman
-                        </div>  
-                    </div>
-                    <div class="row table-entry">
-                        <div class="col-sm-6 col-xs-12 item-detail">
-                           <div class="cart-item-detail">
-                                <h5 class="cart-item-name">Ramandika Pranamulia</h5>
-                                <p class="sum-weight">(+62) 821 1246 1569</p>
-                                <p class="sum-weight">Alamat</p>
-                                <p class="note-each address-send">Perumahan Cisait Puri Pratama Blok C4C No.26<br />RT. 03 RW. 05 Desa Cisait Kecamatan Kragilan<br />Serang-Banten 42184</p>
-                           </div> 
-                           <div class="edit-delete-links edit-delete-links-2 edit-bot">
-                                <a class="edit-cart"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-xs-12 item-edit-delete">
-                            <div class="pull-right edit-delete-links">
-                                <a><i class="fa fa-pencil" aria-hidden="true"></i>Edit</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 table-entry table-head table-head-bot">
-                            <div class="lower-header lower-header-2-down">
-                                Paket Pengiriman
-                            </div>  
-                        </div> 
-                        <div class="col-sm-3 col-xs-12 item-price-cart select-package">
-                            <select class="form-control" id="sel3">
-                                <option>Paket Kilat Khusus</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                              </select>
-                            <p class="sum-weight request-info">Rincian biaya pengiriman akan diinformasikan oleh Pos, setelah melakukan <i>request</i> pembelian.</p>
-                        </div>
-                    </div>
+                    <h2 class="section-heading terlaris normal-page-heading">Daftar</h2>
                 </div>
                 <div class="row">
-                   <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="btn btn-default btn-primary btn-orange btn-block btn-back"><i class="fa fa-chevron-left btn-chev-icon" aria-hidden="true"></i> Kembali Berbelanja</div>
-                   </div>
-                   <div class="col-md-3 col-md-offset-6 col-sm-6 col-xs-12">
-                        <div class="btn btn-default btn-primary btn-orange btn-block btn-request">Request Pembelian <i class="fa fa-chevron-right btn-chev-icon" aria-hidden="true"></i></div>
-                   </div>
+                    <div class="col-sm-6">
+                        <h5>Akun Kantor Pos Commerce</h5>
+                        <input type="text" class="form-control input-standard" placeholder="Username" id="name">
+                        <input type="text" class="form-control input-standard" placeholder="Email" id="name">
+                        <input type="password" class="form-control input-standard" placeholder="Password" id="name">
+                        <input type="password" class="form-control input-standard" placeholder="Ulangi Password" id="name">
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>Data Pribadi</h5>
+                        <input type="text" class="form-control input-standard" placeholder="Nama Lengkap" id="name">
+                        <input type="text" class="form-control input-standard" placeholder="Nomor HP" id="name">
+                        <input type="text" class="form-control input-standard" placeholder="Nomor Identitas (KTP, SIM, Paspor)" id="name">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <input type="text" class="form-control input-standard" placeholder="Tempat Lahir" id="name">
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="input-group date" data-provide="datepicker">
+                                    <input type="text" class="form-control input-standard" placeholder="Tanggal Lahir">
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Jenis Kelamin</p>
+                        <p><i class="fa fa-circle-o" aria-hidden="true"></i> Pria</p>
+                        <p><i class="fa fa-circle-o" aria-hidden="true"></i> Wanita</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -527,6 +289,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/datepicker/js/bootstrap-datepicker.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/script-product.js"></script>
