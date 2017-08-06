@@ -1940,6 +1940,8 @@ section#send {
 }
 .total-price-up-small {
   border-bottom: solid 1px #ddd;
+  margin-right: -6px;
+  margin-left: -6px;
 }
 .box-filter {
   background-color: #fff;
@@ -1981,6 +1983,19 @@ section#send {
 }
 .filter-btn-down {
   border-right: solid 1px #ddd;
+}
+.note-2 {
+  margin-bottom: 0;
+}
+.price-each-small {
+  margin-top: 21px;
+}
+.detail-header-small,
+.detail-purchase-2 {
+  border-right: none;
+}
+.row-yellow {
+  background-color: #fffcd8;
 }
 @media (max-width: 479px) {
   .container {
@@ -2205,6 +2220,12 @@ section#send {
     display: block;
     margin-top: 72px !important;
   }
+
+  .total-price-up-small {
+    border-bottom: solid 1px #ddd;
+    margin-right: -6px;
+    margin-left: -6px;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -2398,6 +2419,12 @@ section#send {
   .cancel-cart {
     display: block;
     margin-top: 72px !important;
+  }
+
+  .total-price-up-small {
+    border-bottom: solid 1px #ddd;
+    margin-right: -8px;
+    margin-left: -8px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2628,6 +2655,11 @@ section#send {
   }
   .cancel-cart {
     display: none;
+  }  
+  .hide-show {
+    height: 20px !important;
+    margin-bottom: 16px;
+    transform: translateY(8px);
   }
 }
 @media (min-width: 1200px) {
@@ -2723,5 +2755,14 @@ section#send {
   }
   .cancel-cart {
     display: none;
+  }
+  .total-price-up {
+    margin-right: -16px;
+    margin-left: -16px;
+  }
+  .hide-show {
+    height: 20px !important;
+    margin-bottom: 16px;
+    transform: translateY(8px);
   }
 }
