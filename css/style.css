@@ -2044,6 +2044,13 @@ section#send {
   transform: translateY(1px);
   color: #ec651c !important;
 }
+.pag li a {
+  color: #ec651c !important;
+}
+.pag-disabled a {
+  background-color: #f4f4f4 !important;
+  color: #777 !important;
+}
 @media (max-width: 479px) {
   .container {
     padding-left: 16px;
@@ -2288,6 +2295,12 @@ section#send {
   .row-products-all {
     margin-top: -40px;
   }
+  .bcumb-cat {
+    transform: translateY(8px);
+  }
+  .pag {
+    display: none;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -2490,6 +2503,7 @@ section#send {
   }
   .nama-kategori {
     margin-top: 96px !important;
+    margin-bottom: 64px !important;
     font-size: 24px;
     text-transform: uppercase;
     text-align: center;
@@ -2502,6 +2516,9 @@ section#send {
   }
   .row-products-all {
     margin-top: -40px;
+  }
+  .pag {
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2630,6 +2647,13 @@ section#send {
   .nama-kategori {
     margin-left: -12px !important;
     margin-right: -12px !important;
+  }  
+  .chevron-title {
+    display: none;
+  }
+  .pag {
+    display: block;
+    padding-right: 8px !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2758,6 +2782,13 @@ section#send {
   .nama-kategori {
     margin-left: -12px !important;
     margin-right: -12px !important;
+  }  
+  .chevron-title {
+    display: none;
+  }  
+  .pag {
+    display: block;
+    padding-right: 8px !important;
   }
 }
 @media (min-width: 1200px) {
@@ -2874,5 +2905,12 @@ section#send {
   .nama-kategori {
     margin-left: -4px !important;
     margin-right: -4px !important;
+  }
+  .chevron-title {
+    display: none;
+  }
+  .pag {
+    display: block;
+    padding-right: 16px !important;
   }
 }
