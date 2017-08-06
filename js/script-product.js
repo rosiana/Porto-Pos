@@ -96,9 +96,15 @@
         }
         if ($(window).width() <= 768) {
             $('.total-tagihan-all').removeClass('pull-right');
+            $('.lower-header-2').css({'display':'none'});
+            $('.lower-header-2-down').css({'display':'block'});
+            $('.table-head-bot').css({'display':'block'});
         }
         else {
             $('.total-tagihan-all').addClass('pull-right');
+            $('.lower-header-2').css({'display':'block'});
+            $('.lower-header-2-down').css({'display':'none'});
+            $('.table-head-bot').css({'display':'none'});
         }
     })
 

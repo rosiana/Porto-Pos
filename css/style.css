@@ -1512,8 +1512,55 @@ section#item {
   border: solid 1px #ddd !important;
 }
 
+.lower-header {
+  margin-top: 14px;
+  font-weight: 600;
+}
+
+#sel3 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  box-shadow: none;
+  border-radius: 2px;
+}
+
+.lower-header {
+  height: 48px !important;
+  margin-top: 0;
+  padding-top: 14px;
+}
+
+.address-send {
+  margin-bottom: 0 !important;
+}
+
+.select-package {
+  padding-bottom: 16px;
+}
+
+.edit-bot {
+  margin-top: 0 !important;
+}
+
+.table-head-bot {
+  border-top: solid 1px #ddd;
+  margin-top: 16px;
+}
+
+.request-info {
+  line-height: 18px;
+}
+
 section#cart {
-  padding: 88px 0;
+  padding: 88px 0 32px;
+}
+section#send {
+  padding: 24px 0;
+}
+
+.header-cart-2 {
+  border-top: solid 1px #ddd;
+  padding-top: 32px;
 }
 
 .table-entry {
@@ -1605,7 +1652,7 @@ section#cart {
 }
 
 .total-all {
-  border: solid 2px #ddd;
+  /*border: solid 2px #ddd; */
   height: 68px;
 }
 
