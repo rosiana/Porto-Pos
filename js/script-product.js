@@ -99,12 +99,18 @@
             $('.lower-header-2').css({'display':'none'});
             $('.lower-header-2-down').css({'display':'block'});
             $('.table-head-bot').css({'display':'block'});
+
+            $('.small-purchase').css({'display':'block'});
+            $('.big-purchase').css({'display':'none'});
         }
         else {
             $('.total-tagihan-all').addClass('pull-right');
             $('.lower-header-2').css({'display':'block'});
             $('.lower-header-2-down').css({'display':'none'});
             $('.table-head-bot').css({'display':'none'});
+
+            $('.small-purchase').css({'display':'none'});
+            $('.big-purchase').css({'display':'block'});
         }
     })
 
