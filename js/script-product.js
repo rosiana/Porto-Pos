@@ -173,6 +173,14 @@
                 }
             }
         }
+        if ($(window).width() <= 480) {
+            $('.btn-confirm-group-1').css({'display':'none'});
+            $('.btn-confirm-group-2').css({'display':'block'});
+        }
+        else {
+            $('.btn-confirm-group-1').css({'display':'block'});
+            $('.btn-confirm-group-2').css({'display':'none'});
+        }
     })
 
     var checked = false;

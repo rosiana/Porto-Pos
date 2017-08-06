@@ -2228,10 +2228,6 @@ section#send {
     height: 20px !important;
     margin-bottom: 16px;
   }
-  .cancel-req {
-    width: 100%;
-    text-align: center;
-  }
   .col-purchase-middle {
     padding-left: 16px !important;
     padding-top: 0;
@@ -2309,6 +2305,14 @@ section#send {
   }
   .muted-custom {
     margin-bottom: 24px !important;
+  }
+  .cancel-req,
+  .hide-show {
+    width: 100%;
+    text-align: center;
+  }
+  .cancel-req {
+    margin-bottom: 8px !important;
   }
 }
 
@@ -2457,10 +2461,6 @@ section#send {
   .hide-show {
     height: 20px !important;
     margin-bottom: 16px;
-  }
-  .cancel-req {
-    width: 100%;
-    text-align: center;
   }
   .col-purchase-middle {
     padding-left: 16px !important;
