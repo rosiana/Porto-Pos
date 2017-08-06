@@ -2039,6 +2039,11 @@ section#send {
 .all-pdct {
   background-color: #fff !important;
 }
+.bc-icon {
+  font-size: 16px !important;
+  transform: translateY(1px);
+  color: #ec651c !important;
+}
 @media (max-width: 479px) {
   .container {
     padding-left: 16px;
