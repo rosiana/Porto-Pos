@@ -738,6 +738,7 @@ section#guides {
 section#products {
   padding: 64px 0;
   background-color: #f4f4f4;
+  padding-bottom: 48px;
 }
 .daftar-login {
   text-align: center;
@@ -1160,7 +1161,7 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index: 1000 !important;
+  z-index: 10 !important;
   opacity: 1;
   color: #fff;
 }
@@ -1292,6 +1293,11 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
   transform: translateY(-8px);
 }
 
+.btn-login-test {  
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .lupa-sandi {
   text-align: right;
   font-weight: 600;
@@ -1378,6 +1384,7 @@ body.modal-open .modal[style]:not([style='display: none;']) .modal-dialog {
   padding-right: 24px !important;
   color: #ec651c;
   border-color: #ec651c;
+  margin-top: 24px;
 }
 
 .btn-popular:hover,
@@ -2660,6 +2667,11 @@ section#send {
     height: 20px !important;
     margin-bottom: 16px;
     transform: translateY(8px);
+  }  
+  .col-tgl-req {
+    padding-right: 0;
+    border-right: solid 1px #ddd;
+    height: 44px;
   }
 }
 @media (min-width: 1200px) {
@@ -2764,5 +2776,10 @@ section#send {
     height: 20px !important;
     margin-bottom: 16px;
     transform: translateY(8px);
+  }
+  .col-tgl-req {
+    padding-right: 0;
+    border-right: solid 1px #ddd;
+    height: 44px;
   }
 }
