@@ -2268,7 +2268,7 @@ section#send {
   }
   .cancel-cart {
     display: block;
-    margin-top: 72px !important;
+    margin-top: 80px !important;
   }
 
   .total-price-up-small {
@@ -2306,12 +2306,16 @@ section#send {
   .muted-custom {
     margin-bottom: 24px !important;
   }
+  .btn-confirm-group-2 {
+    margin-top: 16px;
+  }
   .cancel-req,
   .hide-show {
     width: 100%;
     text-align: center;
   }
   .cancel-req {
+    margin-top: -8px !important;
     margin-bottom: 8px !important;
   }
 }
@@ -2502,7 +2506,7 @@ section#send {
   }
   .cancel-cart {
     display: block;
-    margin-top: 72px !important;
+    margin-top: 80px !important;
   }
 
   .total-price-up-small {
