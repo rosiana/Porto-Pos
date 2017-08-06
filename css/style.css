@@ -2367,6 +2367,12 @@ section#send {
   .reg-btn-all {
     margin-top: -24px;
   }
+  .login-heading {
+    margin-top: 24px !important;
+  }
+  .form-group-login {
+    margin-top: 16px !important;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
