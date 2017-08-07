@@ -396,5 +396,13 @@ $(".input-number").keydown(function (e) {
         $('.step-3').css({'display':'none'});
          $('.step-4').css({'display':'block'});
      })
-
+     $('.btn-step-4').click(function() {
+        window.location.href = "index.html";
+        loggedIn = true;
+     })
+     $('.btn-login-test-modal').click(function() {
+        console.log("tes");
+        window.location.href = "index.html";
+        loggedIn = true;
+     })
 })(jQuery); // End of use strict

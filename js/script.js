@@ -168,7 +168,7 @@
     });
 
     var sidebarShown = false;
-    var loggedIn = false;
+    var loggedIn = true;
     $('.fa-bars').click(function() {
         if (loggedIn) {
             $('.sidebar-logged-in').css({'display': 'block'});
@@ -206,6 +206,10 @@
         $('body').css({'overflow': 'scroll'});
         sidebarShown = false;
     });
+
+    $('.nav-menu-logged-out').css({'display': 'none'});
+            $('.nav-menu-logged-in').css({'display': 'block'});
+            $('.nav-menu-logged-in-2').css({'display': 'block'});
 
     $('.btn-login-test-modal').click(function() {
         if (loggedIn) {
