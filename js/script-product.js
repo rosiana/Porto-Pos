@@ -378,4 +378,23 @@ $(".input-number").keydown(function (e) {
 
      $('.datepicker').datepicker();
 
+     $('.step-1').css({'display':'block'});
+     $('.step-2').css({'display':'none'});
+     $('.step-3').css({'display':'none'});
+     $('.step-4').css({'display':'none'});
+     $('.btn-chev-icon').css({'display':'inline-block'});
+
+     $('.btn-step-1').click(function() {
+        $('.step-1').css({'display':'none'});
+         $('.step-2').css({'display':'block'});
+     })
+     $('.btn-step-2').click(function() {
+        $('.step-2').css({'display':'none'});
+         $('.step-3').css({'display':'block'});
+     })
+     $('.btn-step-3').click(function() {
+        $('.step-3').css({'display':'none'});
+         $('.step-4').css({'display':'block'});
+     })
+
 })(jQuery); // End of use strict
