@@ -2792,6 +2792,9 @@ section#send {
   .reg-btn-all {
     margin-top: -24px;
   }
+  .cat-title {
+    margin-bottom: 32px !important;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
