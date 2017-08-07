@@ -2392,6 +2392,9 @@ section#send {
   .form-group-login {
     margin-top: 16px !important;
   }
+  .cat-title {
+    margin-bottom: 32px !important;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -2638,6 +2641,9 @@ section#send {
   }
   .form-group-login {
     margin-top: 16px !important;
+  }
+  .cat-title {
+    margin-bottom: 32px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
